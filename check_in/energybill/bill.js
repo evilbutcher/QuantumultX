@@ -1,9 +1,9 @@
 /*
 【国网电费】@evilbutcher
 
-【仓库地址】https://github.com/evilbutcher/Quantumult_X/tree/master（欢迎star🌟）
+【仓库地址】https://github.com/evilbutcher/QuantumultX/tree/master（欢迎star🌟）
 
-【BoxJs】https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/evilbutcher.boxjs.json
+【BoxJs】https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/evilbutcher.boxjs.json
 
 【致谢】
 感谢Peng-YM的OpenAPI.js！
@@ -25,29 +25,29 @@
 【Surge】
 -----------------
 [Script]
-国网电费获取Cookie = type=http-request, pattern = http-request http:\/\/weixin.bj.sgcc.com.cn\/ott\/\/app\/elec\/account\/query, script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/energybill/bill.js, requires-body=true
-国网电费 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/energybill/bill.js
+国网电费获取Cookie = type=http-request, pattern = http-request http:\/\/weixin.bj.sgcc.com.cn\/ott\/\/app\/elec\/account\/query, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/bill.js, requires-body=true
+国网电费 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/bill.js
 
 【Loon】
 -----------------
 [Script]
-http-request http:\/\/weixin.bj.sgcc.com.cn\/ott\/\/app\/elec\/account\/query tag=国网电费获取Cookie, script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/energybill/bill.js, requires-body=true
-cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/energybill/bill.js, tag=国网电费
+http-request http:\/\/weixin.bj.sgcc.com.cn\/ott\/\/app\/elec\/account\/query tag=国网电费获取Cookie, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/bill.js, requires-body=true
+cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/bill.js, tag=国网电费
 
 【Quantumult X】
 -----------------
 [rewrite_local]
-http:\/\/weixin.bj.sgcc.com.cn\/ott\/\/app\/elec\/account\/query url script-request-body https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/energybill/bill.js
+http:\/\/weixin.bj.sgcc.com.cn\/ott\/\/app\/elec\/account\/query url script-request-body https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/bill.js
 
 [task_local]
-5 0 * * * https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/energybill/bill.js, tag=国网电费
+5 0 * * * https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/bill.js, tag=国网电费
 
 【All App MitM】
 hostname = weixin.bj.sgcc.com.cn
 
 【Icon】
-透明：https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/bill_tran.png
-彩色：https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/bill.png
+透明：https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/bill_tran.png
+彩色：https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/bill.png
 */
 
 const $ = new API("bill", true);

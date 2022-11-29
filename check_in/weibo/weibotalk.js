@@ -1,7 +1,7 @@
 /**********
 
   🐬主要作者：evilbutcher （签到、cookie等主体逻辑编写）
-  📕地址：https://github.com/evilbutcher/Quantumult_X/tree/master
+  📕地址：https://github.com/evilbutcher/QuantumultX/tree/master
 
   🐬次要作者: toulanboy （细节完善，支持多平台）
   📕地址：https://github.com/toulanboy/scripts
@@ -34,30 +34,30 @@
    ***************************************
   【BoxJs 订阅， 可以让你修改远程文件里面的变量】
    ***************************************
-   BoxJs订阅链接：https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/evilbutcher.boxjs.json
+   BoxJs订阅链接：https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/evilbutcher.boxjs.json
    订阅后，可以在box里面进行 cookie清空、通知个数、签到延迟 等设置.
 
   *************************
   【Surge 4.2+ 脚本配置】
   *************************
-  微博超话cookie获取 = type=http-request,pattern=^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button),script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/weibo/weibotalk.cookie.js,requires-body=false
-  微博超话 = type=cron,cronexp="5 0  * * *",script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/weibo/weibotalk.js,wake-system=true,timeout=600
+  微博超话cookie获取 = type=http-request,pattern=^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button),script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/weibo/weibotalk.cookie.js,requires-body=false
+  微博超话 = type=cron,cronexp="5 0  * * *",script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/weibo/weibotalk.js,wake-system=true,timeout=600
 
   *************************
   【Loon 2.1+ 脚本配置】
   *************************
   [script]
-  cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/weibo/weibotalk.js, timeout=600, tag=微博超话
-  http-request ^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button) script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/weibo/weibotalk.cookie.js,requires-body=false, tag=微博超话cookie获取
+  cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/weibo/weibotalk.js, timeout=600, tag=微博超话
+  http-request ^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button) script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/weibo/weibotalk.cookie.js,requires-body=false, tag=微博超话cookie获取
 
   *************************
   【 QX 1.0.10+ 脚本配置 】 
   *************************
   [rewrite_local]
-  ^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button) url script-request-header https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/weibo/weibotalk.cookie.js
+  ^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button) url script-request-header https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/weibo/weibotalk.cookie.js
 
   [task]
-  5 0 * * * https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/weibo/weibotalk.js, tag=微博超话
+  5 0 * * * https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/weibo/weibotalk.js, tag=微博超话
 
 
   【All App MitM】

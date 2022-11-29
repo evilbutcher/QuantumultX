@@ -1,9 +1,9 @@
 /*
 【酷乐潮玩小程序】@evilbutcher
 
-【仓库地址】https://github.com/evilbutcher/Quantumult_X/tree/master（欢迎star🌟）
+【仓库地址】https://github.com/evilbutcher/QuantumultX/tree/master（欢迎star🌟）
 
-【BoxJs】https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/evilbutcher.boxjs.json
+【BoxJs】https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/evilbutcher.boxjs.json
 
 【致谢】
 感谢Peng-YM的OpenAPI.js！
@@ -25,29 +25,29 @@
 【Surge】
 -----------------
 [Script]
-酷乐潮玩小程序获取签到Cookie = http-request, pattern = https:\/\/wxavip\-tp\.ezrpro\.cn\/Vip\/SignIn\/SignIn, script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/klcw/klcw.js, requires-body=true
-酷乐潮玩小程序 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/klcw/klcw.js
+酷乐潮玩小程序获取签到Cookie = http-request, pattern = https:\/\/wxavip\-tp\.ezrpro\.cn\/Vip\/SignIn\/SignIn, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/klcw/klcw.js, requires-body=true
+酷乐潮玩小程序 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/klcw/klcw.js
 
 【Loon】
 -----------------
 [Script]
-http-request https:\/\/wxavip\-tp\.ezrpro\.cn\/Vip\/SignIn\/SignIn tag=酷乐潮玩小程序获取签到Cookie, script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/klcw/klcw.js, requires-body=true
-cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/klcw/klcw.js, tag=酷乐潮玩小程序
+http-request https:\/\/wxavip\-tp\.ezrpro\.cn\/Vip\/SignIn\/SignIn tag=酷乐潮玩小程序获取签到Cookie, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/klcw/klcw.js, requires-body=true
+cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/klcw/klcw.js, tag=酷乐潮玩小程序
 
 【Quantumult X】
 -----------------
 [rewrite_local]
-https:\/\/wxavip\-tp\.ezrpro\.cn\/Vip\/SignIn\/SignIn url script-request-body https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/klcw/klcw.js
+https:\/\/wxavip\-tp\.ezrpro\.cn\/Vip\/SignIn\/SignIn url script-request-body https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/klcw/klcw.js
 
 [task_local]
-5 0 * * * https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/klcw/klcw.js, tag=酷乐潮玩小程序
+5 0 * * * https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/klcw/klcw.js, tag=酷乐潮玩小程序
 
 【All App MitM】
 hostname = wxavip-tp.ezrpro.cn
 
 【Icon】
-透明：https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/klcw_tran.png
-彩色：https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/klcw.png
+透明：https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/klcw_tran.png
+彩色：https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/klcw.png
 */
 
 const $ = new API("klcw", true);

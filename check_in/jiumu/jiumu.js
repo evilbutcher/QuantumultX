@@ -1,9 +1,9 @@
 /*
 【九木杂物社】@evilbutcher
 
-【仓库地址】https://github.com/evilbutcher/Quantumult_X/tree/master（欢迎star🌟）
+【仓库地址】https://github.com/evilbutcher/QuantumultX/tree/master（欢迎star🌟）
 
-【BoxJs】https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/evilbutcher.boxjs.json
+【BoxJs】https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/evilbutcher.boxjs.json
 
 【致谢】
 感谢Peng-YM的OpenAPI.js！
@@ -25,29 +25,29 @@
 【Surge】
 -----------------
 [Script]
-九木杂物社获取Cookie = http-request, pattern = https:\/\/wxavip\-up\.ezrpro\.cn\/Vip\/SignIn\/SignIn, script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/jiumu/jiumu.js, requires-body=true
-九木杂物社 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/jiumu/jiumu.js
+九木杂物社获取Cookie = http-request, pattern = https:\/\/wxavip\-up\.ezrpro\.cn\/Vip\/SignIn\/SignIn, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/jiumu/jiumu.js, requires-body=true
+九木杂物社 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/jiumu/jiumu.js
 
 【Loon】
 -----------------
 [Script]
-http-request https:\/\/wxavip\-up\.ezrpro\.cn\/Vip\/SignIn\/SignIn tag=九木杂物社获取Cookie, script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/jiumu/jiumu.js, requires-body=true
-cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/jiumu/jiumu.js, tag=九木杂物社
+http-request https:\/\/wxavip\-up\.ezrpro\.cn\/Vip\/SignIn\/SignIn tag=九木杂物社获取Cookie, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/jiumu/jiumu.js, requires-body=true
+cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/jiumu/jiumu.js, tag=九木杂物社
 
 【Quantumult X】
 -----------------
 [rewrite_local]
-https:\/\/wxavip\-up\.ezrpro\.cn\/Vip\/SignIn\/SignIn url script-request-body https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/jiumu/jiumu.js
+https:\/\/wxavip\-up\.ezrpro\.cn\/Vip\/SignIn\/SignIn url script-request-body https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/jiumu/jiumu.js
 
 [task_local]
-5 0 * * * https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/jiumu/jiumu.js, tag=九木杂物社
+5 0 * * * https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/jiumu/jiumu.js, tag=九木杂物社
 
 【All App MitM】
 hostname = wxavip-up.ezrpro.cn
 
 【Icon】
-透明：https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/jiumu_tran.png
-彩色：https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/jiumu.png
+透明：https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/jiumu_tran.png
+彩色：https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/jiumu.png
 */
 
 const $ = new API("Jiumu", true);

@@ -17,9 +17,9 @@ GitHub: Neurogram-R
 【机场签到Cookie版】修改自Neurogram
 Modified by evilbutcher
 
-【仓库地址】https://github.com/evilbutcher/Quantumult_X/tree/master（欢迎star🌟）
+【仓库地址】https://github.com/evilbutcher/QuantumultX/tree/master（欢迎star🌟）
 
-【BoxJs】https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/evilbutcher.boxjs.json
+【BoxJs】https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/evilbutcher.boxjs.json
 
 【致谢】
 使用Chavy的Env.js修改了原脚本，支持Quantumult X和Loon，并支持BoxJs
@@ -46,27 +46,27 @@ Modified by evilbutcher
 【Quantumult X】
 ----------------
 [rewrite_local]
-https:\/\/cccat\.io url script-request-header https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkincookie_env.js
+https:\/\/cccat\.io url script-request-header https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/glados/checkincookie_env.js
 （其中https:\/\/cccat\.io需要替换为你自己的机场链接）
 
 [task_local]
-5 0 * * * https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkincookie_env.js
+5 0 * * * https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/glados/checkincookie_env.js
 
 【Surge】
 ----------------
 [Script]
-获取Cookie = type=http-request, pattern=https:\/\/cccat\.io, script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkincookie_env.js
+获取Cookie = type=http-request, pattern=https:\/\/cccat\.io, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/glados/checkincookie_env.js
 （其中https:\/\/cccat\.io需要替换为你自己的机场链接）
 
-机场签到Cookie版 = type=cron,cronexp=5 0 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkincookie_env.js
+机场签到Cookie版 = type=cron,cronexp=5 0 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/glados/checkincookie_env.js
 
 【Loon】
 ----------------
 [Script]
-http-request https:\/\/cccat\.io tag=获取Cookie, script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkincookie_env.js
+http-request https:\/\/cccat\.io tag=获取Cookie, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/glados/checkincookie_env.js
 （其中https:\/\/cccat\.io需要替换为你自己的机场链接）
 
-cron "5 0 * * *" tag=机场签到Cookie版, script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkincookie_env.js
+cron "5 0 * * *" tag=机场签到Cookie版, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/glados/checkincookie_env.js
 
 ③BoxJs中，填入机场登陆链接。
 

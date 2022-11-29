@@ -2,36 +2,36 @@
 
 # Quantumult X 脚本和规则整理
 
-#### [English Version](https://github.com/evilbutcher/Quantumult_X/blob/master/README_EN.md)
+#### [English Version](https://github.com/evilbutcher/QuantumultX/blob/master/README_EN.md)
 
 绝大多数代码都用到了@chavyleung 的 Env.js 和@Peng-YM 的 OpenAPI.js，感谢！
 
 如果能请杯奶茶，就很感谢啦！  
-<img src="https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/photo.jpeg" height="40%" width="40%">
+<img src="https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/photo.jpeg" height="40%" width="40%">
 
 ## 脚本合集
 
 ### 【BoxJs】订阅
 
-https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/evilbutcher.boxjs.json
+https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/evilbutcher.boxjs.json
 
 ### 【Quantumult X】脚本订阅合集+自己写的去广告
 
-https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/QuantumultX.rewrite.conf
-https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/QuantumultX.task.json
+https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/QuantumultX.rewrite.conf
+https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/QuantumultX.task.json
 
 ### 【Surge】脚本订阅合集
 
-https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/Surge.tasks.sgmodule
-https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/Surge.cookies.sgmodule
+https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/Surge.tasks.sgmodule
+https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/Surge.cookies.sgmodule
 
 ### 【Loon】脚本订阅合集
 
-https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/Loon.scripts.conf
+https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/Loon.scripts.conf
 
 ## 脚本
 
-### [微博超话（单账号）](https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/weibo)
+### [微博超话（单账号）](https://github.com/evilbutcher/QuantumultX/tree/master/check_in/weibo)
 
 #### 功能特点
 
@@ -40,7 +40,7 @@ https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/Loon.scripts.c
 3. 如果超话数量大于 100，可以先检查签到情况，未签到才会执行，更好解决签到频繁问题。
 4. 支持 BoxJs。
 
-### [自用签到](https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/glados)
+### [自用签到](https://github.com/evilbutcher/QuantumultX/tree/master/check_in/glados)
 
 #### 功能特点
 
@@ -49,14 +49,14 @@ https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/Loon.scripts.c
 3. 支持 BoxJs。
 4. checkin_env.js 修改自@Neurogram-R，增加了多平台支持。
 
-### [公众号监控](https://github.com/evilbutcher/Quantumult_X/blob/master/check_in/wechatsubs/wechatsubs.js)
+### [公众号监控](https://github.com/evilbutcher/QuantumultX/blob/master/check_in/wechatsubs/wechatsubs.js)
 
 #### 功能特点
 
 1. 设定关键词监控公众号推送。
 2. 可自定关键词推送间隔。
 
-### [热门监控](https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/hotsearch/hot.js)
+### [热门监控](https://github.com/evilbutcher/QuantumultX/tree/master/check_in/hotsearch/hot.js)
 
 #### 功能特点
 
@@ -79,7 +79,7 @@ https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/Loon.scripts.c
 17. ~~监控人人影视最新上传，配合捷径[磁力离线](https://www.icloud.com/shortcuts/cfad8390798e459db458d6233d229209)可实现磁力下载，解锁追剧新姿势。~~
 18. 可自定关键词推送间隔。
 
-### [App 价格监控](https://github.com/evilbutcher/Quantumult_X/blob/master/check_in/appstore/AppMonitor.js)
+### [App 价格监控](https://github.com/evilbutcher/QuantumultX/blob/master/check_in/appstore/AppMonitor.js)
 
 #### 功能特点
 
@@ -87,7 +87,7 @@ https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/Loon.scripts.c
 2. 设置区域方式“1443988620:hk，1443988620/us，1443988620-uk，1443988620_jp，1443988620 au”。
 3. 支持 BoxJs by evilbutcher。
 
-### [NASA 每日一图](https://github.com/evilbutcher/Quantumult_X/blob/master/check_in/nasa/nasapic.js)
+### [NASA 每日一图](https://github.com/evilbutcher/QuantumultX/blob/master/check_in/nasa/nasapic.js)
 
 #### 功能特点
 
@@ -96,45 +96,45 @@ https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/Loon.scripts.c
 3. 可以选择输出中文还是英文。
 4. 点击通知可以打开浏览器图片-保存。
 
-### [iDaily 每日环球视野](https://github.com/evilbutcher/Quantumult_X/blob/master/check_in/idaily/idaily.js)
+### [iDaily 每日环球视野](https://github.com/evilbutcher/QuantumultX/blob/master/check_in/idaily/idaily.js)
 
 #### 功能特点
 
 1. 可选择随机 or 最新内容。
 
-### [Funboat](https://github.com/evilbutcher/Quantumult_X/blob/master/check_in/funboat/funboat.js)
+### [Funboat](https://github.com/evilbutcher/QuantumultX/blob/master/check_in/funboat/funboat.js)
 
 #### 功能特点
 
 1. 喜欢 funko 可以关注该微信小程序。
 
-### [九木杂物社](https://github.com/evilbutcher/Quantumult_X/blob/master/check_in/jiumu/jiumu.js)
+### [九木杂物社](https://github.com/evilbutcher/QuantumultX/blob/master/check_in/jiumu/jiumu.js)
 
 #### 功能特点
 
 1. 九木杂物社自动签到。
 
-### [酷乐潮玩](https://github.com/evilbutcher/Quantumult_X/blob/master/check_in/klcw)
+### [酷乐潮玩](https://github.com/evilbutcher/QuantumultX/blob/master/check_in/klcw)
 
 #### 功能特点
 
 1. 酷乐潮玩小程序、App 自动签到。
 
-### [信息查询](https://github.com/evilbutcher/Quantumult_X/blob/master/check_in/wechatsubs)
+### [信息查询](https://github.com/evilbutcher/QuantumultX/blob/master/check_in/wechatsubs)
 
 #### 功能特点
 
 1. 支持事业单位招聘监控。
 2. 支持高校人才网监控。
 
-### [彩票查询](https://github.com/evilbutcher/Quantumult_X/blob/master/check_in/ssq/ssq.js)
+### [彩票查询](https://github.com/evilbutcher/QuantumultX/blob/master/check_in/ssq/ssq.js)
 
 #### 功能特点
 
 1. 支持双色球、大乐透、福彩 3D、七乐彩。
 2. 支持仅查询当日开奖的彩票。
 
-### [华住会](https://github.com/evilbutcher/Quantumult_X/blob/master/check_in/hzh/hzh.js)
+### [华住会](https://github.com/evilbutcher/QuantumultX/blob/master/check_in/hzh/hzh.js)
 
 #### 功能特点
 
@@ -143,11 +143,11 @@ https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/Loon.scripts.c
 
 ## 规则类
 
-### [去广告](https://github.com/evilbutcher/Quantumult_X/tree/master/remove_ad)
+### [去广告](https://github.com/evilbutcher/QuantumultX/tree/master/remove_ad)
 
 #### 功能特点
 
-[Readme](https://github.com/evilbutcher/Quantumult_X/tree/master/remove_ad/README.md)
+[Readme](https://github.com/evilbutcher/QuantumultX/tree/master/remove_ad/README.md)
 
 ### 免责声明
 

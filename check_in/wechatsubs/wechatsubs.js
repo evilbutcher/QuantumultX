@@ -1,9 +1,9 @@
 /*
 【公众号监控】@evilbutcher
 
-【仓库地址】https://github.com/evilbutcher/Quantumult_X/tree/master（欢迎star🌟）
+【仓库地址】https://github.com/evilbutcher/QuantumultX/tree/master（欢迎star🌟）
 
-【BoxJs】https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/evilbutcher.boxjs.json
+【BoxJs】https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/evilbutcher.boxjs.json
 
 【致谢】
 感谢Peng-YM的OpenAPI.js！
@@ -25,21 +25,21 @@
 【Surge】
 -----------------
 [Script]
-公众号监控 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/wechatsubs/wechatsubs.js
+公众号监控 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/wechatsubs/wechatsubs.js
 
 【Loon】
 -----------------
 [Script]
-cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/wechatsubs/wechatsubs.js, tag=公众号监控
+cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/wechatsubs/wechatsubs.js, tag=公众号监控
 
 【Quantumult X】
 -----------------
 [task_local]
-5 0 * * * https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/wechatsubs/wechatsubs.js, tag=公众号监控
+5 0 * * * https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/wechatsubs/wechatsubs.js, tag=公众号监控
 
 【Icon】
-透明：https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/wechat_tran.png
-彩色：https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/wechat.png
+透明：https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/wechat_tran.png
+彩色：https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/wechat.png
 */
 
 const $ = new API("Wechatsubs", true);

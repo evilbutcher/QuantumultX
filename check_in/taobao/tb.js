@@ -1,9 +1,9 @@
 /*
 【淘宝监控】@evilbutcher
 
-【仓库地址】https://github.com/evilbutcher/Quantumult_X/tree/master（欢迎star🌟）
+【仓库地址】https://github.com/evilbutcher/QuantumultX/tree/master（欢迎star🌟）
 
-【BoxJs】https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/evilbutcher.boxjs.json
+【BoxJs】https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/evilbutcher.boxjs.json
 
 【致谢】
 感谢Peng-YM的OpenAPI.js！
@@ -25,29 +25,29 @@
 【Surge】
 -----------------
 [Script]
-淘宝监控获取Cookie = http-request, pattern = https:\/\/h5api.m.taobao.com\/h5\/mtop.taobao.detail.getdesc, script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/taobao/tb.js, requires-body=false
-淘宝监控 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/taobao/tb.js
+淘宝监控获取Cookie = http-request, pattern = https:\/\/h5api.m.taobao.com\/h5\/mtop.taobao.detail.getdesc, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/taobao/tb.js, requires-body=false
+淘宝监控 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/taobao/tb.js
 
 【Loon】
 -----------------
 [Script]
-http-request https:\/\/h5api.m.taobao.com\/h5\/mtop.taobao.detail.getdesc tag=淘宝监控获取Cookie, script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/taobao/tb.js, requires-body=false
-cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/hzh/taobao/tb.js, tag=淘宝监控
+http-request https:\/\/h5api.m.taobao.com\/h5\/mtop.taobao.detail.getdesc tag=淘宝监控获取Cookie, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/taobao/tb.js, requires-body=false
+cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/hzh/taobao/tb.js, tag=淘宝监控
 
 【Quantumult X】
 -----------------
 [rewrite_local]
-https:\/\/h5api.m.taobao.com\/h5\/mtop.taobao.detail.getdesc url script-request-header https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/taobao/tb.js
+https:\/\/h5api.m.taobao.com\/h5\/mtop.taobao.detail.getdesc url script-request-header https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/taobao/tb.js
 
 [task_local]
-5 0 * * * https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/taobao/tb.js, tag=淘宝监控
+5 0 * * * https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/taobao/tb.js, tag=淘宝监控
 
 【All App MitM】
 hostname =h5api.m.taobao.com
 
 【Icon】
-透明：https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/tb_tran.png
-彩色：https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/tb.png
+透明：https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/tb_tran.png
+彩色：https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/tb.png
 */
 
 const $ = new API("taobao", true);

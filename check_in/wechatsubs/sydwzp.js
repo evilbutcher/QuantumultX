@@ -1,9 +1,9 @@
 /*
 【事业单位招聘监控】@evilbutcher
 
-【仓库地址】https://github.com/evilbutcher/Quantumult_X/tree/master（欢迎star🌟）
+【仓库地址】https://github.com/evilbutcher/QuantumultX/tree/master（欢迎star🌟）
 
-【BoxJs】https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/evilbutcher.boxjs.json
+【BoxJs】https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/evilbutcher.boxjs.json
 
 【致谢】
 感谢Peng-YM的OpenAPI.js！
@@ -25,21 +25,21 @@
 【Surge】
 -----------------
 [Script]
-事业单位招聘监控 = type=cron,cronexp=5 * * * *,script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/wechatsubs/sydwzp.js
+事业单位招聘监控 = type=cron,cronexp=5 * * * *,script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/wechatsubs/sydwzp.js
 
 【Loon】
 -----------------
 [Script]
-cron "5 * * * *" script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/wechatsubs/sydwzp.js, tag=事业单位招聘监控
+cron "5 * * * *" script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/wechatsubs/sydwzp.js, tag=事业单位招聘监控
 
 【Quantumult X】
 -----------------
 [task_local]
-5 * * * * https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/wechatsubs/sydwzp.js, tag=事业单位招聘监控
+5 * * * * https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/wechatsubs/sydwzp.js, tag=事业单位招聘监控
 
 【Icon】
-透明：https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/sydw_tran.png
-彩色：https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/sydw.png
+透明：https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/sydw_tran.png
+彩色：https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/sydw.png
 */
 
 const $ = new API("sydwzp", true);

@@ -17,7 +17,7 @@ ai.ablesky.com, api.weibo.com, mobile.ablesky.com, www.ablesky.com
 #微博广告
 https:\/\/api\.weibo\.com\/oauth2\/getaid url reject
 #开屏时间
-https:\/\/ai\.ablesky\.com\/ajax\/ads\/appads url script-response-body local/Quantumult_X/remove_ad/nltk.js
+https:\/\/ai\.ablesky\.com\/ajax\/ads\/appads url script-response-body local/QuantumultX/remove_ad/nltk.js
 #今日热学
 https:\/\/www\.ablesky\.com\/s\/sr\.do\?action\=single\&appRandom url reject
 #推荐页面

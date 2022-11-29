@@ -1,9 +1,9 @@
 /*
 【Timepop】@evilbutcher
 
-【仓库地址】https://github.com/evilbutcher/Quantumult_X/tree/master（欢迎star🌟）
+【仓库地址】https://github.com/evilbutcher/QuantumultX/tree/master（欢迎star🌟）
 
-【BoxJs】https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/evilbutcher.boxjs.json
+【BoxJs】https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/evilbutcher.boxjs.json
 
 【致谢】
 本脚本使用了Chavy的Env.js，感谢！
@@ -24,25 +24,25 @@
 【Quantumult X】
 ————————————————
 [rewrite_local]
-^https:\/\/h5\.youzan\.com\/wscump\/checkin\/checkin\.json\?checkin\_id\=.*?app\_id\=wx4a1af22a88a99386 url script-request-header https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/timepop/timepop.js
-^https:\/\/h5\.youzan\.com\/wscuser\/membercenter\/stats\.json\?app\_id\=wx4a1af22a88a99386 url script-request-header https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/timepop/timepop.js
+^https:\/\/h5\.youzan\.com\/wscump\/checkin\/checkin\.json\?checkin\_id\=.*?app\_id\=wx4a1af22a88a99386 url script-request-header https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/timepop/timepop.js
+^https:\/\/h5\.youzan\.com\/wscuser\/membercenter\/stats\.json\?app\_id\=wx4a1af22a88a99386 url script-request-header https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/timepop/timepop.js
 
 [task_local]
-5 8 * * * https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/timepop/timepop.js
+5 8 * * * https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/timepop/timepop.js
 
 【Surge】
 ————————————————
 [Script]
-Timepop签到 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/timepop/timepop.js
-Timepop获取签到Cookie = http-request,pattern=^https:\/\/h5\.youzan\.com\/wscump\/checkin\/checkin\.json\?checkin\_id\=.*?app\_id\=wx4a1af22a88a99386,script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/timepop/timepop.js
-Timepop获取积分Cookie = http-request,pattern=^https:\/\/h5\.youzan\.com\/wscuser\/membercenter\/stats\.json\?app\_id\=wx4a1af22a88a99386,script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/timepop/timepop.js
+Timepop签到 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/timepop/timepop.js
+Timepop获取签到Cookie = http-request,pattern=^https:\/\/h5\.youzan\.com\/wscump\/checkin\/checkin\.json\?checkin\_id\=.*?app\_id\=wx4a1af22a88a99386,script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/timepop/timepop.js
+Timepop获取积分Cookie = http-request,pattern=^https:\/\/h5\.youzan\.com\/wscuser\/membercenter\/stats\.json\?app\_id\=wx4a1af22a88a99386,script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/timepop/timepop.js
 
 【Loon】
 ————————————————
 [Script]
-cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/timepop/timepop.js, tag=Timepop签到
-^https:\/\/h5\.youzan\.com\/wscump\/checkin\/checkin\.json\?checkin\_id\=.*?app\_id\=wx4a1af22a88a99386, script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/timepop/timepop.js, tag=Timepop获取签到Cookie
-^https:\/\/h5\.youzan\.com\/wscuser\/membercenter\/stats\.json\?app\_id\=wx4a1af22a88a99386, script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/timepop/timepop.js, tag=Timepop获取积分Cookie
+cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/timepop/timepop.js, tag=Timepop签到
+^https:\/\/h5\.youzan\.com\/wscump\/checkin\/checkin\.json\?checkin\_id\=.*?app\_id\=wx4a1af22a88a99386, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/timepop/timepop.js, tag=Timepop获取签到Cookie
+^https:\/\/h5\.youzan\.com\/wscuser\/membercenter\/stats\.json\?app\_id\=wx4a1af22a88a99386, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/timepop/timepop.js, tag=Timepop获取积分Cookie
 
 【All App MitM】
 hostname = h5.youzan.com
@@ -157,7 +157,7 @@ function out() {
   var msg = detail + "\n" + all;
   $.msg("Timepop", "", msg, {
     "media-url":
-      "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/img.png",
+      "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/img.png",
   });
 }
 

@@ -1,9 +1,9 @@
 /*
 【酷乐潮玩App】@evilbutcher
 
-【仓库地址】https://github.com/evilbutcher/Quantumult_X/tree/master（欢迎star🌟）
+【仓库地址】https://github.com/evilbutcher/QuantumultX/tree/master（欢迎star🌟）
 
-【BoxJs】https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/evilbutcher.boxjs.json
+【BoxJs】https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/evilbutcher.boxjs.json
 
 【致谢】
 感谢Peng-YM的OpenAPI.js！
@@ -25,29 +25,29 @@
 【Surge】
 -----------------
 [Script]
-酷乐潮玩App获取Cookie = http-request, pattern = https:\/\/app\.klcw\.net\.cn\/omp\_cmanage\/mallgateway, script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/klcw/klcw-app.js, requires-body=true
-酷乐潮玩App = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/klcw/klcw-app.js
+酷乐潮玩App获取Cookie = http-request, pattern = https:\/\/app\.klcw\.net\.cn\/omp\_cmanage\/mallgateway, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/klcw/klcw-app.js, requires-body=true
+酷乐潮玩App = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/klcw/klcw-app.js
 
 【Loon】
 -----------------
 [Script]
-http-request https:\/\/app\.klcw\.net\.cn\/omp\_cmanage\/mallgateway tag=酷乐潮玩App获取Cookie, script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/klcw/klcw-app.js, requires-body=true
-cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/klcw/klcw-app.js, tag=酷乐潮玩App
+http-request https:\/\/app\.klcw\.net\.cn\/omp\_cmanage\/mallgateway tag=酷乐潮玩App获取Cookie, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/klcw/klcw-app.js, requires-body=true
+cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/klcw/klcw-app.js, tag=酷乐潮玩App
 
 【Quantumult X】
 -----------------
 [rewrite_local]
-https:\/\/app\.klcw\.net\.cn\/omp\_cmanage\/mallgateway url script-request-body https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/klcw/klcw-app.js
+https:\/\/app\.klcw\.net\.cn\/omp\_cmanage\/mallgateway url script-request-body https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/klcw/klcw-app.js
 
 [task_local]
-5 0 * * * https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/klcw/klcw-app.js, tag=酷乐潮玩App
+5 0 * * * https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/klcw/klcw-app.js, tag=酷乐潮玩App
 
 【All App MitM】
 hostname = app.klcw.net.cn
 
 【Icon】
-透明：https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/klcw_tran.png
-彩色：https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/klcw.png
+透明：https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/klcw_tran.png
+彩色：https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/klcw.png
 */
 
 const $ = new API("klcwapp", true);

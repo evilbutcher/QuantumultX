@@ -8,25 +8,25 @@ The majority of the code used Env.js (@chavyleung) and OpenAPI.js (@Peng-YM), th
 
 ### BoxJs
 
-https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/evilbutcher.boxjs.json
+https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/evilbutcher.boxjs.json
 
 ### For Quantumult X
 
-https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/QuantumultX.rewrite.conf  
-https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/QuantumultX.task.conf (Content needs to be copied to[task_local])
+https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/QuantumultX.rewrite.conf  
+https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/QuantumultX.task.conf (Content needs to be copied to[task_local])
 
 ### For Surge
 
-https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/Surge.tasks.sgmodule  
-https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/Surge.cookies.sgmodule
+https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/Surge.tasks.sgmodule  
+https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/Surge.cookies.sgmodule
 
 ### For Loon
 
-https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/Loon.scripts.conf
+https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/Loon.scripts.conf
 
 ## Scripts
 
-### [Weibo Supertalk(single account)](https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/weibo)
+### [Weibo Supertalk(single account)](https://github.com/evilbutcher/QuantumultX/tree/master/check_in/weibo)
 
 #### Features
 
@@ -35,7 +35,7 @@ https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/Loon.scripts.c
 3. If the number of supertalks more than 100, you can turn on the first check the check-in status, will only be executed for unchecked, to better solve the problem of failing check-in.
 4. Supports BoxJs.
 
-### [Checkin](https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/glados)
+### [Checkin](https://github.com/evilbutcher/QuantumultX/tree/master/check_in/glados)
 
 #### Features
 
@@ -45,14 +45,14 @@ https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/Loon.scripts.c
 4. Checkin_env.js is modified from @Neurogram-R, adding multi-platform support.
 5. GitHub Action has been supported. First, Fork this repo, add CHECKIN_TITLE CHECKIN_URL CHECKIN_EMAIL CHECKIN_PASSWORD four data in the Secrets of the forked repo. Different accounts are separated by &. Both schedule and Star your repo, checkin can be run. Please refer to [pull](https://github.com/wei/pull/blob/master/README.md) on how to keep in sync.
 
-### [Wechatsubs](https://github.com/evilbutcher/Quantumult_X/blob/master/check_in/wechatsubs/wechatsubs.js)
+### [Wechatsubs](https://github.com/evilbutcher/QuantumultX/blob/master/check_in/wechatsubs/wechatsubs.js)
 
 #### Features
 
 1. You can set keywords to monitor the push of Wechat Subscriptions.
 2. You can customize the keyword push interval.
 
-### [Hotlist Monitor](https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/hotsearch/hot.js)
+### [Hotlist Monitor](https://github.com/evilbutcher/QuantumultX/tree/master/check_in/hotsearch/hot.js)
 
 #### Features
 
@@ -75,7 +75,7 @@ https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/Loon.scripts.c
 17. ~~Monitor the latest uploads of RenRenTV, with shortcuts [magnetic offline](https://www.icloud.com/shortcuts/cfad8390798e459db458d6233d229209) can achieve magnetic download, unlocking a new way to catch up on dramas.~~
 18. You can customize the keyword push interval.
 
-### [App Price Monitor](https://github.com/evilbutcher/Quantumult_X/blob/master/check_in/appstore/AppMonitor.js)
+### [App Price Monitor](https://github.com/evilbutcher/QuantumultX/blob/master/check_in/appstore/AppMonitor.js)
 
 #### Features
 
@@ -83,7 +83,7 @@ https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/Loon.scripts.c
 2. Set the region like "1443988620:hk, 1443988620/us, 1443988620-uk, 1443988620_jp, 1443988620 au".
 3. Support BoxJs by evilbutcher.
 
-### [NASA's Picture of the Day](https://github.com/evilbutcher/Quantumult_X/blob/master/check_in/nasa/nasapic.js)
+### [NASA's Picture of the Day](https://github.com/evilbutcher/QuantumultX/blob/master/check_in/nasa/nasapic.js)
 
 #### Features
 
@@ -92,25 +92,25 @@ https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/Loon.scripts.c
 3. You can choose to output Chinese or English.
 4. Click on the notification to open the browser image - Save.
 
-### [iDaily] (https://github.com/evilbutcher/Quantumult_X/blob/master/check_in/idaily/idaily.js)
+### [iDaily] (https://github.com/evilbutcher/QuantumultX/blob/master/check_in/idaily/idaily.js)
 
 ### Features
 
 1. Optional random or newest content
 
-### [Funboat](https://github.com/evilbutcher/Quantumult_X/blob/master/check_in/funboat/funboat.js)
+### [Funboat](https://github.com/evilbutcher/QuantumultX/blob/master/check_in/funboat/funboat.js)
 
 #### Features
 
 1. Who like funko can follow the WeChat app.
 
-### [Jiumu](https://github.com/evilbutcher/Quantumult_X/blob/master/check_in/jiumu/jiumu.js)
+### [Jiumu](https://github.com/evilbutcher/QuantumultX/blob/master/check_in/jiumu/jiumu.js)
 
 #### Features
 
 1. Automatic check-in.
 
-### [KuLeChaoWan](https://github.com/evilbutcher/Quantumult_X/blob/master/check_in/klcw)
+### [KuLeChaoWan](https://github.com/evilbutcher/QuantumultX/blob/master/check_in/klcw)
 
 #### Features
 

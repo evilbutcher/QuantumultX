@@ -1,9 +1,9 @@
 /*
 【NASA每日一图】@evilbutcher
 
-【仓库地址】https://github.com/evilbutcher/Quantumult_X/tree/master（欢迎star🌟）
+【仓库地址】https://github.com/evilbutcher/QuantumultX/tree/master（欢迎star🌟）
 
-【BoxJs】https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/evilbutcher.boxjs.json
+【BoxJs】https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/evilbutcher.boxjs.json
 
 【致谢】
 感谢Peng-YM的OpenAPI.js！
@@ -25,21 +25,21 @@
 【Surge】
 -----------------
 [Script]
-NASA每日一图 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/nasa/nasapic.js
+NASA每日一图 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/nasa/nasapic.js
 
 【Loon】
 -----------------
 [Script]
-cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/nasa/nasapic.js, tag=NASA每日一图
+cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/nasa/nasapic.js, tag=NASA每日一图
 
 【Quantumult X】
 -----------------
 [task_local]
-5 0 * * * https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/nasa/nasapic.js, tag=NASA每日一图
+5 0 * * * https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/nasa/nasapic.js, tag=NASA每日一图
 
 【Icon】
-透明：https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/nasa_tran.png
-彩色：https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/nasa.png
+透明：https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/nasa_tran.png
+彩色：https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/nasa.png
 */
 
 const $ = new API("NASA");

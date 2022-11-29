@@ -1,9 +1,9 @@
 /*
 【Funboat】@evilbutcher
 
-【仓库地址】https://github.com/evilbutcher/Quantumult_X/tree/master（欢迎star🌟）
+【仓库地址】https://github.com/evilbutcher/QuantumultX/tree/master（欢迎star🌟）
 
-【BoxJs】https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/evilbutcher.boxjs.json
+【BoxJs】https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/evilbutcher.boxjs.json
 
 【致谢】
 本脚本使用了Chavy的Env.js，感谢！
@@ -24,25 +24,25 @@
 【Quantumult X】
 ————————————————
 [rewrite_local]
-^https:\/\/h5\.youzan\.com\/wscump\/checkin\/checkin\.json\?checkin\_id\=.*?app\_id\=wx9b5caf9d1669dc96 url script-request-header https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/funboat/funboat.js
-^https:\/\/h5\.youzan\.com\/wscuser\/membercenter\/stats\.json\?app\_id\=wx9b5caf9d1669dc96 url script-request-header https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/funboat/funboat.js
+^https:\/\/h5\.youzan\.com\/wscump\/checkin\/checkin\.json\?checkin\_id\=.*?app\_id\=wx9b5caf9d1669dc96 url script-request-header https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/funboat/funboat.js
+^https:\/\/h5\.youzan\.com\/wscuser\/membercenter\/stats\.json\?app\_id\=wx9b5caf9d1669dc96 url script-request-header https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/funboat/funboat.js
 
 [task_local]
-5 8 * * * https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/funboat/funboat.js
+5 8 * * * https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/funboat/funboat.js
 
 【Surge】
 ————————————————
 [Script]
-Funboat签到 = type=cron,cronexp=5 0 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/funboat/funboat.js
-Funboat获取签到Cookie = type=http-request,pattern=^https:\/\/h5\.youzan\.com\/wscump\/checkin\/checkin\.json\?checkin\_id\=.*?app\_id\=wx9b5caf9d1669dc96,script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/funboat/funboat.js
-Funboat获取积分Cookie = type=http-request,pattern=^https:\/\/h5\.youzan\.com\/wscuser\/membercenter\/stats\.json\?app\_id\=wx9b5caf9d1669dc96,script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/funboat/funboat.js
+Funboat签到 = type=cron,cronexp=5 0 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/funboat/funboat.js
+Funboat获取签到Cookie = type=http-request,pattern=^https:\/\/h5\.youzan\.com\/wscump\/checkin\/checkin\.json\?checkin\_id\=.*?app\_id\=wx9b5caf9d1669dc96,script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/funboat/funboat.js
+Funboat获取积分Cookie = type=http-request,pattern=^https:\/\/h5\.youzan\.com\/wscuser\/membercenter\/stats\.json\?app\_id\=wx9b5caf9d1669dc96,script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/funboat/funboat.js
 
 【Loon】
 ————————————————
 [Script]
-cron "5 0 * * *" tag=Funboat签到, script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/funboat/funboat.js
-http-request ^https:\/\/h5\.youzan\.com\/wscump\/checkin\/checkin\.json\?checkin\_id\=.*?app\_id\=wx9b5caf9d1669dc96 tag=Funboat获取签到Cookie, script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/funboat/funboat.js
-http-request ^https:\/\/h5\.youzan\.com\/wscuser\/membercenter\/stats\.json\?app\_id\=wx9b5caf9d1669dc96 tag=Funboat获取积分Cookie, script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/funboat/funboat.js
+cron "5 0 * * *" tag=Funboat签到, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/funboat/funboat.js
+http-request ^https:\/\/h5\.youzan\.com\/wscump\/checkin\/checkin\.json\?checkin\_id\=.*?app\_id\=wx9b5caf9d1669dc96 tag=Funboat获取签到Cookie, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/funboat/funboat.js
+http-request ^https:\/\/h5\.youzan\.com\/wscuser\/membercenter\/stats\.json\?app\_id\=wx9b5caf9d1669dc96 tag=Funboat获取积分Cookie, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/funboat/funboat.js
 
 【All App MitM】
 hostname = h5.youzan.com
@@ -150,7 +150,7 @@ function out() {
   var msg = detail + "\n" + all;
   $.msg("Funboat", "", msg, {
     "media-url":
-      "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/img.png",
+      "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/img.png",
   });
 }
 

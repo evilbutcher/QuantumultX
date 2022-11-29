@@ -1,9 +1,9 @@
 /*
 【彩票查询】@evilbutcher, @Phantom
 
-【仓库地址】https://github.com/evilbutcher/Quantumult_X/tree/master（欢迎star🌟）；https://github.com/sjzcook/phantom（欢迎star🌟）
+【仓库地址】https://github.com/evilbutcher/QuantumultX/tree/master（欢迎star🌟）；https://github.com/sjzcook/phantom（欢迎star🌟）
 
-【BoxJs】https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/evilbutcher.boxjs.json
+【BoxJs】https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/evilbutcher.boxjs.json
 
 【致谢】
 感谢Peng-YM的OpenAPI.js！
@@ -25,20 +25,20 @@
 【Surge】
 -----------------
 [Script]
-彩票查询 = type=cron,cronexp=0 30 21 * * * ,script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/ssq/ssq.js
+彩票查询 = type=cron,cronexp=0 30 21 * * * ,script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/ssq/ssq.js
 
 【Loon】
 -----------------
 [Script]
-cron "0 30 21 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/ssq/ssq.js, tag=彩票查询
+cron "0 30 21 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/ssq/ssq.js, tag=彩票查询
 
 【Quantumult X】
 -----------------
 [task_local]
-0 30 21 * * *  https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/ssq/ssq.js, tag=彩票查询
+0 30 21 * * *  https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/ssq/ssq.js, tag=彩票查询
 
 【Icon】
-透明：https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/ssq_tran.png
+透明：https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/ssq_tran.png
 彩色：https://raw.githubusercontent.com/58xinian/icon/master/Two_color_ball.png
 */
 const $ = new API("ssq", true);

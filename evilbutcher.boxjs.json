@@ -2,14 +2,14 @@
   "id": "evilbutcher.app.sub",
   "name": "evilbutcher 应用订阅",
   "author": "@evilbutcher",
-  "icon": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/13th.png",
-  "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master",
+  "icon": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/13th.png",
+  "repo": "https://github.com/evilbutcher/QuantumultX/tree/master",
   "apps": [
     {
       "id": "weibotalk",
       "name": "微博超话单账号",
       "descs_html": [
-        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/weibo/weibotalk.js\">脚本地址</a>】",
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/weibo/weibotalk.js\">脚本地址</a>】",
         "Cookie获取指南",
         "<iframe type=\"text/html\" src=\"https://www.youtube.com/embed/SKR0stikm-8?autoplay=1\" frameborder=\"0\"></iframe>",
         "Cookie获取分为三步，请仔细查看视频中弹出的<font class=\"error--text\">三个通知</font>。如果下面应用设置第四个，检查签到开关<font class=\"error--text\">打开</font>时，第三个Cookie必须获取；关闭时获取前两个即可运行。",
@@ -54,7 +54,7 @@
         }
       ],
       "author": "@toulanboy, @evilbutcher",
-      "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/weibo",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/weibo",
       "icons": [
         "https://raw.githubusercontent.com/Orz-3/mini/master/weibo.png",
         "https://raw.githubusercontent.com/Orz-3/task/master/weibo.png"
@@ -62,11 +62,11 @@
       "scripts": [
         {
           "name": "执行微博超话签到",
-          "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/weibo/weibotalk.js"
+          "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/weibo/weibotalk.js"
         },
         {
           "name": "一键清除Cookie",
-          "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/weibo/deletecookie.js"
+          "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/weibo/deletecookie.js"
         }
       ]
     },
@@ -74,7 +74,7 @@
       "id": "hot",
       "name": "热门监控",
       "descs_html": [
-        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/hotsearch/hot.js\">脚本地址</a>】",
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/hotsearch/hot.js\">脚本地址</a>】",
         "只有关闭<font class=\"error--text\">关键词匹配</font>才会通知最新内容，否则没匹配关键词不会通知。 ",
         "<font class=\"error--text\">Quantumult X</font>用户：B站、豆瓣榜单独立推送时可显示封面；关闭附带跳转链接点击通知也可跳转。"
       ],
@@ -437,18 +437,18 @@
         }
       ],
       "author": "@evilbutcher",
-      "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/hotsearch",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/hotsearch",
       "icons": [
         "https://raw.githubusercontent.com/Orz-3/mini/master/hot.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/hot.png"
       ],
-      "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/hotsearch/hot.js"
+      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/hotsearch/hot.js"
     },
     {
       "id": "checkin",
       "name": "机场签到",
       "descs_html": [
-        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkin_env.js\">脚本地址</a>】",
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/glados/checkin_env.js\">脚本地址</a>】",
         "多个机场使用请用<font class=\"error--text\">中文逗号</font>分隔，顺序需要对应。",
         "也可利用BoxJs<font class=\"error--text\">会话切换</font>功能，一次保存一个机场信息，切换会话签到。"
       ],
@@ -508,18 +508,18 @@
         }
       ],
       "author": "@Neurogram, @evilbutcher",
-      "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/glados",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/glados",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/glados_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/glados_animation.gif"
       ],
-      "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkin_env.js"
+      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/glados/checkin_env.js"
     },
     {
       "id": "checkincookie",
       "name": "机场签到Cookie",
       "descs_html": [
-        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkincookie_env.js\">脚本地址</a>】",
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/glados/checkincookie_env.js\">脚本地址</a>】",
         "此版本为尝试用Cookie签到，针对有登陆验证或跳转的机场。",
         "可利用BoxJs<font class=\"error--text\">会话切换</font>功能，一次保存一个机场信息，切换会话签到。"
       ],
@@ -558,18 +558,18 @@
         }
       ],
       "author": "@Neurogram, @evilbutcher",
-      "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/glados",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/glados",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/glados_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/glados_animation.gif"
       ],
-      "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/checkincookie_env.js"
+      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/glados/checkincookie_env.js"
     },
     {
       "id": "glados",
       "name": "GLaDOS",
       "descs_html": [
-        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/glados.js\">脚本地址</a>】",
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/glados/glados.js\">脚本地址</a>】",
         "签到较为特殊，故独立写了一个。",
         "注册地址：https://github.com/glados-network/GLaDOS",
         "邀请码：3JRG4-KSGZJ-8QPXF-8PPOO"
@@ -579,18 +579,18 @@
         "evil_galdosauthorization"
       ],
       "author": "@evilbutcher",
-      "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/glados",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/glados",
       "icons": [
         "https://raw.githubusercontent.com/58xinian/icon/master/glados1_mini.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/glados1.png"
       ],
-      "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/glados/glados.js"
+      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/glados/glados.js"
     },
     {
       "id": "appmonitor",
       "name": "AppMonitor",
       "descs_html": [
-        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/appstore/AppMonitor.js\">脚本地址</a>】",
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/appstore/AppMonitor.js\">脚本地址</a>】",
         "修改自Quantumult X群友分享，支持BoxJs。",
         "填写App ID可通过AppStore分享按钮拷贝想要监控App的链接，在链接最后有id，复制到监控ID内即可；未单独设置区域，则采用reg默认区域",
         "关于ID，例如：https://apps.apple.com/cn/app/nplayer-plus/id<font class=\"error--text\">539397400</font>",
@@ -624,18 +624,18 @@
         }
       ],
       "author": "@t.me/QuanXApp群友",
-      "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/appstore",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/appstore",
       "icons": [
         "https://raw.githubusercontent.com/Orz-3/mini/master/Apple.png",
         "https://raw.githubusercontent.com/Orz-3/task/master/appstore.png"
       ],
-      "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/appstore/AppMonitor.js"
+      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/appstore/AppMonitor.js"
     },
     {
       "id": "nasapic",
       "name": "NASA每日一图",
       "descs_html": [
-        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/nasa/nasapic.js\">脚本地址</a>】",
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/nasa/nasapic.js\">脚本地址</a>】",
         "首先前往<a href=\"https://api.nasa.gov\">NASA</a>申请一个API，申请流程非常简单，把得到的API填入脚本即可"
       ],
       "keys": [
@@ -661,18 +661,18 @@
         }
       ],
       "author": "@evilbutcher",
-      "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/nasa",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/nasa",
       "icons": [
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/nasa_tran.png",
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/nasa.png"
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/nasa_tran.png",
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/nasa.png"
       ],
-      "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/nasa/nasapic.js"
+      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/nasa/nasapic.js"
     },
     {
       "id": "idaily",
       "name": "iDaily",
       "descs_html": [
-        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/idaily/idaily.js\">脚本地址</a>】"
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/idaily/idaily.js\">脚本地址</a>】"
       ],
       "keys": [
         "@iDaily.random"
@@ -687,18 +687,18 @@
         }
       ],
       "author": "@evilbutcher",
-      "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/idaily",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/idaily",
       "icons": [
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/idaily_tran.png",
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/idaily.png"
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/idaily_tran.png",
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/idaily.png"
       ],
-      "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/idaily/idaily.js"
+      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/idaily/idaily.js"
     },
     {
       "id": "jiumu",
       "name": "九木杂物社",
       "descs_html": [
-        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/jiumu/jiumu.js\">脚本地址</a>】"
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/jiumu/jiumu.js\">脚本地址</a>】"
       ],
       "keys": [
         "@Jiumu.evil_jiumuSignStr",
@@ -708,18 +708,18 @@
         "@Jiumu.evil_jiumuBody"
       ],
       "author": "@evilbutcher",
-      "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/jiumu",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/jiumu",
       "icons": [
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/jiumu_tran.png",
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/jiumu.png"
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/jiumu_tran.png",
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/jiumu.png"
       ],
-      "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/jiumu/jiumu.js"
+      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/jiumu/jiumu.js"
     },
     {
       "id": "wechatsubs",
       "name": "公众号监控",
       "descs_html": [
-        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/wechatsubs/wechatsubs.js\">脚本地址</a>】"
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/wechatsubs/wechatsubs.js\">脚本地址</a>】"
       ],
       "keys": [
         "@Wechatsubs.wechatkeyword1",
@@ -758,18 +758,18 @@
         }
       ],
       "author": "@evilbutcher",
-      "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/wechatsubs",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/wechatsubs",
       "icons": [
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/wechat_tran.png",
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/wechat.png"
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/wechat_tran.png",
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/wechat.png"
       ],
-      "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/wechatsubs/wechatsubs.js"
+      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/wechatsubs/wechatsubs.js"
     },
     {
       "id": "klcwapp",
       "name": "酷乐潮玩App",
       "descs_html": [
-        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/klcw/klcw-app.js\">脚本地址</a>】"
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/klcw/klcw-app.js\">脚本地址</a>】"
       ],
       "keys": [
         "@klcwapp.evil_klcwappBody"
@@ -787,18 +787,18 @@
         }
       ],
       "author": "@evilbutcher",
-      "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/klcw",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/klcw",
       "icons": [
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/klcw_tran.png",
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/klcw.png"
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/klcw_tran.png",
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/klcw.png"
       ],
-      "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/klcw/klcw-app.js"
+      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/klcw/klcw-app.js"
     },
     {
       "id": "klcw",
       "name": "酷乐潮玩小程序",
       "descs_html": [
-        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/klcw/klcw.js\">脚本地址</a>】"
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/klcw/klcw.js\">脚本地址</a>】"
       ],
       "keys": [
         "@klcw.evil_klcwid",
@@ -809,18 +809,18 @@
         "@klcw.evil_klcwBody"
       ],
       "author": "@evilbutcher",
-      "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/klcw",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/klcw",
       "icons": [
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/klcw_tran.png",
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/klcw.png"
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/klcw_tran.png",
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/klcw.png"
       ],
-      "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/klcw/klcw.js"
+      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/klcw/klcw.js"
     },
     {
       "id": "funboat",
       "name": "Funboat",
       "descs_html": [
-        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/funboat/funboat.js\">脚本地址</a>】",
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/funboat/funboat.js\">脚本地址</a>】",
         "微信小程序搜索 Funboat，按照脚本提示获取Cookie。",
         "⚠️其他基于有赞的小程序也可能触发获取Cookie，请获取完后及时禁用获取Cookie重写/脚本。"
       ],
@@ -831,18 +831,18 @@
         "evil_funkostatuscookie"
       ],
       "author": "@evilbutcher",
-      "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/funboat",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/funboat",
       "icons": [
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/funko_tran.png",
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/funko.png"
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/funko_tran.png",
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/funko.png"
       ],
-      "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/funboat/funboat.js"
+      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/funboat/funboat.js"
     },
     {
       "id": "timepop",
       "name": "Timepop",
       "descs_html": [
-        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/timepop/timepop.js\">脚本地址</a>】",
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/timepop/timepop.js\">脚本地址</a>】",
         "微信小程序搜索 Timepop，按照脚本提示获取Cookie。",
         "⚠️其他基于有赞的小程序也可能触发获取Cookie，请获取完后及时禁用获取Cookie重写/脚本。"
       ],
@@ -853,18 +853,18 @@
         "evil_timepopstatuscookie"
       ],
       "author": "@evilbutcher",
-      "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/timepop",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/timepop",
       "icons": [
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/timepop_tran.png",
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/timepop.png"
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/timepop_tran.png",
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/timepop.png"
       ],
-      "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/timepop/timepop.js"
+      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/timepop/timepop.js"
     },
     {
       "id": "sydwzp",
       "name": "事业单位招聘监控",
       "descs_html": [
-        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/wechatsubs/sydwzp.js\">脚本地址</a>】"
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/wechatsubs/sydwzp.js\">脚本地址</a>】"
       ],
       "keys": [
         "@sydwzp.sydwarea",
@@ -900,18 +900,18 @@
         }
       ],
       "author": "@evilbutcher",
-      "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/wechatsubs",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/wechatsubs",
       "icons": [
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/sydw_tran.png",
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/sydw.png"
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/sydw_tran.png",
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/sydw.png"
       ],
-      "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/wechatsubs/sydwzp.js"
+      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/wechatsubs/sydwzp.js"
     },
     {
       "id": "gxrcw",
       "name": "高校人才网招聘监控",
       "descs_html": [
-        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/wechatsubs/gxrcw.js\">脚本地址</a>】"
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/wechatsubs/gxrcw.js\">脚本地址</a>】"
       ],
       "keys": [
         "@gxrcw.gxrcwsavedtime",
@@ -928,18 +928,18 @@
         }
       ],
       "author": "@evilbutcher",
-      "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/wechatsubs",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/wechatsubs",
       "icons": [
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/gxrcw_tran.png",
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/gxrcw.png"
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/gxrcw_tran.png",
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/gxrcw.png"
       ],
-      "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/wechatsubs/gxrcw.js"
+      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/wechatsubs/gxrcw.js"
     },
     {
       "id": "ssq",
       "name": "彩票结果查询",
       "descs_html": [
-        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/ssq/ssq.js\">脚本地址</a>】"
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/ssq/ssq.js\">脚本地址</a>】"
       ],
       "settings": [
         {
@@ -979,36 +979,36 @@
         }
       ],
       "author": "@evilbutcher, @Phantom",
-      "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/ssq",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/ssq",
       "icons": [
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/ssq_tran.png",
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/ssq_tran.png",
         "https://raw.githubusercontent.com/58xinian/icon/master/Two_color_ball.png"
       ],
-      "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/ssq/ssq.js"
+      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/ssq/ssq.js"
     },
     {
       "id": "hzh",
       "name": "华住会",
       "descs_html": [
-        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/hzh/hzh.js\">脚本地址</a>】"
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/hzh/hzh.js\">脚本地址</a>】"
       ],
       "keys": [
         "@hzh.evil_hzhCookie",
         "@hzh.evil_hzhUserToken"
       ],
       "author": "@evilbutcher",
-      "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/hzh",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/hzh",
       "icons": [
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/hzh_tran.png",
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/hzh.png"
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/hzh_tran.png",
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/hzh.png"
       ],
-      "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/hzh/hzh.js"
+      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/hzh/hzh.js"
     },
     {
       "id": "taobao",
       "name": "淘宝监控",
       "descs_html": [
-        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/taobao/tb.js\">脚本地址</a>】"
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/taobao/tb.js\">脚本地址</a>】"
       ],
       "keys": [
         "@taobao.evil_tbcookie",
@@ -1016,18 +1016,18 @@
         "@taobao.evil_tbrecord"
       ],
       "author": "@evilbutcher",
-      "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/taobao",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/taobao",
       "icons": [
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/tb_tran.png",
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/tb.png"
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/tb_tran.png",
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/tb.png"
       ],
-      "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/taobao/tb.js"
+      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/taobao/tb.js"
     },
     {
       "id": "taobao-name",
       "name": "淘宝监控-标题版",
       "descs_html": [
-        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/taobao/tb-name.js\">脚本地址</a>】"
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/taobao/tb-name.js\">脚本地址</a>】"
       ],
       "keys": [
         "@taobao-name.evil_tbnamecookie",
@@ -1036,30 +1036,30 @@
         "@taobao-name.evil_tbnameprice"
       ],
       "author": "@evilbutcher",
-      "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/taobao",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/taobao",
       "icons": [
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/tb_tran.png",
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/tb.png"
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/tb_tran.png",
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/tb.png"
       ],
-      "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/taobao/tb-name.js"
+      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/taobao/tb-name.js"
     },
     {
       "id": "bill",
       "name": "国网电费",
       "descs_html": [
-        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/energybill/bill.js\">脚本地址</a>】"
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/bill.js\">脚本地址</a>】"
       ],
       "keys": [
         "@bill.evil_billCookie",
         "@bill.evil_billBody"
       ],
       "author": "@evilbutcher",
-      "repo": "https://github.com/evilbutcher/Quantumult_X/tree/master/check_in/energybill",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/energybill",
       "icons": [
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/bill_tran.png",
-        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/picture/bill.png"
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/bill_tran.png",
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/bill.png"
       ],
-      "script": "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/energybill/bill.js"
+      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/bill.js"
     }
   ]
 }

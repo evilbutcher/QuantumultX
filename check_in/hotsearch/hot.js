@@ -2,9 +2,9 @@
 
 【热门监控】@evilbutcher
 
-【仓库地址】https://github.com/evilbutcher/Quantumult_X/tree/master（欢迎star🌟）
+【仓库地址】https://github.com/evilbutcher/QuantumultX/tree/master（欢迎star🌟）
 
-【BoxJs】https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/evilbutcher.boxjs.json
+【BoxJs】https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/evilbutcher.boxjs.json
 
 【致谢】
 本脚本使用了Chavy的Env.js，感谢！
@@ -51,17 +51,17 @@
 
 【Surge】配置
 ------------------------------------------
-热门监控 = type=cron,cronexp="30 0 8-22/2 * * *",script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/hotsearch/hot.js,wake-system=true,timeout=600
+热门监控 = type=cron,cronexp="30 0 8-22/2 * * *",script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/hotsearch/hot.js,wake-system=true,timeout=600
 
 【Loon】配置
 ------------------------------------------
 [script]
-cron "30 0 8-22/2 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/hotsearch/hot.js, timeout=600, tag=热门监控
+cron "30 0 8-22/2 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/hotsearch/hot.js, timeout=600, tag=热门监控
 
 【Quantumult X】配置
 ------------------------------------------
 [task_local]
-30 0 8-22/2 * * * https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/hotsearch/hot.js, tag=热门监控
+30 0 8-22/2 * * * https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/hotsearch/hot.js, tag=热门监控
 
 */
 

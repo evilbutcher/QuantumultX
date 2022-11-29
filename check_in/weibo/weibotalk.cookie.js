@@ -1,7 +1,7 @@
 /**********
 
   🐬主要作者：Evilbutcher （签到、cookie等主体逻辑编写）
-  📕地址：https://github.com/evilbutcher/Quantumult_X/tree/master
+  📕地址：https://github.com/evilbutcher/QuantumultX/tree/master
 
   🐬次要作者: toulanboy （细节完善，支持多平台）
   📕地址：https://github.com/toulanboy/scripts
@@ -41,8 +41,8 @@
   *************************
   【Surge 4.2+ 脚本配置】
   *************************
-  微博超话cookie获取 = type=http-request,pattern=^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button),script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/weibo/weibotalk.cookie.js,requires-body=false
-  微博超话 = type=cron,cronexp="5 0  * * *",script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/weibo/weibotalk.js,wake-system=true,timeout=600
+  微博超话cookie获取 = type=http-request,pattern=^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button),script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/weibo/weibotalk.cookie.js,requires-body=false
+  微博超话 = type=cron,cronexp="5 0  * * *",script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/weibo/weibotalk.js,wake-system=true,timeout=600
 
   [MITM]
   hostname = api.weibo.cn
@@ -51,8 +51,8 @@
   【Loon 2.1+ 脚本配置】
   *************************
   [script]
-  cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/weibo/weibotalk.js, timeout=600, tag=微博超话
-  http-request ^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button) script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/weibo/weibotalk.cookie.js,requires-body=false, tag=微博超话cookie获取
+  cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/weibo/weibotalk.js, timeout=600, tag=微博超话
+  http-request ^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button) script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/weibo/weibotalk.cookie.js,requires-body=false, tag=微博超话cookie获取
   
   [MITM]
   hostname = api.weibo.cn
@@ -61,10 +61,10 @@
   【 QX 1.0.10+ 脚本配置 】 
   *************************
   [rewrite_local]
-  ^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button) url script-request-header https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/weibo/weibotalk.cookie.js
+  ^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button) url script-request-header https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/weibo/weibotalk.cookie.js
 
   [task]
-  5 0 * * * https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/weibo/weibotalk.js, tag=微博超话
+  5 0 * * * https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/weibo/weibotalk.js, tag=微博超话
 
   [MITM]
   hostname = api.weibo.cn, mapi.weibo.com
