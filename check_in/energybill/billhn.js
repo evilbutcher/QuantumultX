@@ -37,7 +37,7 @@ cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/Quant
 【Quantumult X】
 -----------------
 [rewrite_local]
-https:\/\/wxgzpt.hn.sgcc.com.cn\/wxapp\_dlsh\/wx url script-request-body https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/billhn.js
+https:\/\/wxgzpt.hn.sgcc.com.cn\/wxapp\_dlsh\/wx url script-request-header https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/billhn.js
 
 [task_local]
 5 0 * * * https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/billhn.js, tag=国网电费-湖南
