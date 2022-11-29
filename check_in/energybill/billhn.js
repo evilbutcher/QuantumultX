@@ -121,7 +121,7 @@ function checkdetail() {
             for (i = 0; i < 7; i++) {
                 week = week + parseInt(data[i].spower)
             }
-            $.detailyesterday = "昨日用电量：" + yesterday + "度\n"
+            $.detailyesterday = "昨日用电：" + yesterday + "度\n"
             //$.detailweek = "最近7日用电量：" + week + "度\n"
         } else {
             $.error(JSON.stringify(response));

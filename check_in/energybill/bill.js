@@ -109,7 +109,7 @@ function checkin() {
             var addr = data.ELEC_ADDR
             var balance = data.BALANCE_SHEET
             var time = data.AS_TIME
-            $.notify("国网电费", addr, time + "\n当前余额：" + balance + "元");
+            $.notify("国网电费-北京⚡️", addr, time + "\n当前余额：" + balance + "元");
         } else {
             $.error(JSON.stringify(response));
             throw new ERR.ParseError("请检查日志，稍后再试");

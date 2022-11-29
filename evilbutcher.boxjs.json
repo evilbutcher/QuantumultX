@@ -1068,12 +1068,12 @@
         "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/billhn.js\">脚本地址</a>】"
       ],
       "keys": [
-        "@bill.evil_billhnfeeCookie",
-        "@bill.evil_billhnfeeUrl",
-        "@bill.evil_billhndetailCookie",
-        "@bill.evil_billhndetailUrl",
-        "@bill.evil_billhnbalanceCookie",
-        "@bill.evil_billhnbalanceUrl"
+        "@billhn.evil_billhnfeeCookie",
+        "@billhn.evil_billhnfeeUrl",
+        "@billhn.evil_billhndetailCookie",
+        "@billhn.evil_billhndetailUrl",
+        "@billhn.evil_billhnbalanceCookie",
+        "@billhn.evil_billhnbalanceUrl"
       ],
       "author": "@evilbutcher",
       "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/energybill",
