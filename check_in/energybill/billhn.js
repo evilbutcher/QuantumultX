@@ -26,18 +26,21 @@
 -----------------
 [Script]
 国网电费-湖南获取Cookie = type=http-request, pattern = https:\/\/wxgzpt.hn.sgcc.com.cn\/wxapp\_dlsh\/wx, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/billhn.js, requires-body=false
+国网电费-湖南获取余额Cookie = type=http-request, pattern = https:\/\/wxgzpt.hn.sgcc.com.cn\/hndlGateway\/payment\/payment\/balance, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/billhn.js, requires-body=false
 国网电费-湖南 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/billhn.js
 
 【Loon】
 -----------------
 [Script]
 http-request https:\/\/wxgzpt.hn.sgcc.com.cn\/wxapp\_dlsh\/wx tag=国网电费-湖南获取Cookie, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/billhn.js, requires-body=false
+https:\/\/wxgzpt.hn.sgcc.com.cn\/hndlGateway\/payment\/payment\/balance tag=国网电费-湖南余额Cookie, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/billhn.js, requires-body=false
 cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/billhn.js, tag=国网电费-湖南
 
 【Quantumult X】
 -----------------
 [rewrite_local]
 https:\/\/wxgzpt.hn.sgcc.com.cn\/wxapp\_dlsh\/wx url script-request-header https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/billhn.js
+https:\/\/wxgzpt.hn.sgcc.com.cn\/hndlGateway\/payment\/payment\/balance url script-request-header https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/billhn.js
 
 [task_local]
 5 0 * * * https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/billhn.js, tag=国网电费-湖南
