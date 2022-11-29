@@ -1060,6 +1060,26 @@
         "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/bill.png"
       ],
       "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/bill.js"
+    },
+    {
+      "id": "bill",
+      "name": "国网电费-湖南",
+      "descs_html": [
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/billhn.js\">脚本地址</a>】"
+      ],
+      "keys": [
+        "@bill.evil_billhnfeeCookie",
+        "@bill.evil_billhnfeeUrl",
+        "@bill.evil_billhndetailCookie",
+        "@bill.evil_billhndetailUrl"
+      ],
+      "author": "@evilbutcher",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/energybill",
+      "icons": [
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/bill_tran.png",
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/bill.png"
+      ],
+      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/billhn.js"
     }
   ]
 }
