@@ -25,7 +25,7 @@
 【Surge】
 -----------------
 [Script]
-国网电费获取Cookie = type=http-request, pattern = http-request http:\/\/weixin.bj.sgcc.com.cn\/ott\/\/app\/elec\/account\/query, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/bill.js, requires-body=true
+国网电费获取Cookie = type=http-request, pattern = http:\/\/weixin.bj.sgcc.com.cn\/ott\/\/app\/elec\/account\/query, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/bill.js, requires-body=true
 国网电费 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/bill.js
 
 【Loon】

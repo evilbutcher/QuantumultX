@@ -25,7 +25,7 @@
 【Surge】
 -----------------
 [Script]
-国网电费-湖南获取Cookie = type=http-request, pattern = http-request https:\/\/wxgzpt.hn.sgcc.com.cn\/wxapp\_dlsh\/wx, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/billhn.js, requires-body=false
+国网电费-湖南获取Cookie = type=http-request, pattern = https:\/\/wxgzpt.hn.sgcc.com.cn\/wxapp\_dlsh\/wx, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/billhn.js, requires-body=false
 国网电费-湖南 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/billhn.js
 
 【Loon】
@@ -56,9 +56,12 @@ $.feecookie = $.read("evil_billhnfeeCookie");
 $.feeurl = $.read("evil_billhnfeeUrl");
 $.detailcookie = $.read("evil_billhndetailCookie");
 $.detailurl = $.read("evil_billhndetailUrl");
+$.balancecookie = $.read("evil_billhnbalanceCookie");
+$.balanceurl = $.read("evil_billhnbalanceUrl");
 $.detailweek = ""
 $.detailyesterday = ""
 $.detail = ""
+$.balance = ""
 
 !(async () => {
     if (typeof $request != "undefined") {
@@ -68,7 +71,8 @@ $.detail = ""
     if ($.feecookie != undefined && $.feeurl != undefined && $.detailcookie != undefined && $.detailurl != undefined && $.feecookie != "" && $.feeurl != "" && $.detailcookie != "" && $.detailurl != "") {
         await checkfee();
         await checkdetail();
-        $.notify("国网电费-湖南⚡️", $.detailyesterday, $.detailweek + $.detail);
+        await checkbalance();
+        $.notify("国网电费-湖南⚡️", "", $.detailyesterday + $.detail + $.balance);
     } else {
         $.notify("国网电费-湖南", "", "❌ 请先获取Cookie");
     }
@@ -114,8 +118,8 @@ function checkdetail() {
             for (i = 0; i < 7; i++) {
                 week = week + parseInt(data[i].spower)
             }
-            $.detailyesterday = "昨日用电量：" + yesterday + "度"
-            $.detailweek = "最近7日用电量：" + week + "度\n"
+            $.detailyesterday = "昨日用电量：" + yesterday + "度\n"
+            //$.detailweek = "最近7日用电量：" + week + "度\n"
         } else {
             $.error(JSON.stringify(response));
             throw new ERR.ParseError("请检查日志，稍后再试");
@@ -123,6 +127,34 @@ function checkdetail() {
     });
 }
 
+
+function checkbalance() {
+    const url = $.balanceurl;
+    const headers = {
+        'Cookie': $.balancecookie,
+        'Accept': `application/json, text/plain, */*`,
+        'Connection': `keep-alive`,
+        'Accept-Encoding': `gzip, deflate, br`,
+        'Host': `wxgzpt.hn.sgcc.com.cn`,
+        'User-Agent': `Mozilla/5.0 (iPhone; CPU iPhone OS 16_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.30(0x18001e30) NetType/WIFI Language/zh_CN`,
+        'Accept-Language': `zh-CN,zh-Hans;q=0.9`
+    };
+    const myRequest = {
+        url: url,
+        headers: headers,
+    };
+    return $.http.get(myRequest).then((response) => {
+        var statusCode = response.statusCode
+        if (statusCode == 200) {
+            var data = JSON.parse(response.body).data
+            var balance = data.electricFee
+            $.balance = "当前结余：" + balance + "元"
+        } else {
+            $.error(JSON.stringify(response));
+            throw new ERR.ParseError("请检查日志，稍后再试");
+        }
+    });
+}
 
 function checkfee() {
     const url = $.feeurl;
@@ -148,7 +180,7 @@ function checkfee() {
             var total = data.totalMoney
             //var yearmonth = data.feeYearMonth
             var power = data.powerSum
-            $.detail = "当月用电量：" + power + "度\n上月电费：" + total + "元"
+            $.detail = "当月用电：" + power + "度\n上月电费：" + total + "元\n"
         } else {
             $.error(JSON.stringify(response));
             throw new ERR.ParseError("请检查日志，稍后再试");
@@ -201,6 +233,19 @@ function getCookie() {
         $.log(url);
         $.write(url, "evil_billhndetailUrl");
         $.notify("国网电费-湖南", "", "获取详情Cookie成功🎉");
+    }
+    if (
+        $request &&
+        $request.method != "OPTIONS" &&
+        $request.url.match(/hndlGateway\/payment\/payment\/balance/)
+    ) {
+        const cookie = $request.headers["Cookie"];
+        $.log(cookie);
+        $.write(cookie, "evil_billhnbalanceCookie");
+        const url = $request.url;
+        $.log(url);
+        $.write(url, "evil_billhnbalanceUrl");
+        $.notify("国网电费-湖南", "", "获取余额Cookie成功🎉");
     }
 }
 
