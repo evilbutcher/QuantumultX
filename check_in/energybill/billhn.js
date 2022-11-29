@@ -88,38 +88,6 @@ $.detail = ""
     })
     .finally(() => $.done());
 
-function checkfee() {
-    const url = $.feeurl;
-    const headers = {
-        'Accept': `*/*`,
-        'Accept-Encoding': `gzip, deflate, br`,
-        'Origin': `https://wxgzpt.hn.sgcc.com.cn`,
-        'Cookie': $.feecookie,
-        'Connection': `keep-alive`,
-        'Host': `wxgzpt.hn.sgcc.com.cn`,
-        'User-Agent': `Mozilla/5.0 (iPhone; CPU iPhone OS 16_1_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.30(0x18001e30) NetType/WIFI Language/zh_CN`,
-        'Accept-Language': `zh-CN,zh-Hans;q=0.9`,
-        'X-Requested-With': `XMLHttpRequest`
-    };
-    const myRequest = {
-        url: url,
-        headers: headers,
-    };
-    return $.http.fetch(myRequest).then((response) => {
-        var statusCode = response.statusCode
-        if (statusCode == 200) {
-            var data = powerBillList
-            var total = data.totalMoney
-            var yearmonth = data.feeYearMonth
-            var power = data.powerSum
-            $.detail = yearmonth + "月电费：" + total + "元\n当月用电量：" + power + "度"
-        } else {
-            $.error(JSON.stringify(response));
-            throw new ERR.ParseError("请检查日志，稍后再试");
-        }
-    });
-}
-
 function checkdetail() {
     const url = $.detailurl;
     const headers = {
@@ -140,11 +108,11 @@ function checkdetail() {
     return $.http.post(myRequest).then((response) => {
         var statusCode = response.statusCode
         if (statusCode == 200) {
-            var data = response.body
+            var data = JSON.parse(response.body)
             var yesterday = data[0].spower
             var week = 0
             for (i = 0; i < 7; i++) {
-                week = week + data[i].spower
+                week = week + parseInt(data[i].spower)
             }
             $.detailyesterday = "昨日用电量：" + yesterday + "度"
             $.detailweek = "最近7日用电量：" + week + "度\n"
@@ -176,12 +144,11 @@ function checkfee() {
     return $.http.post(myRequest).then((response) => {
         var statusCode = response.statusCode
         if (statusCode == 200) {
-            var data = response.body.powerBillList
+            var data = JSON.parse(response.body).powerBillList[0]
             var total = data.totalMoney
             var yearmonth = data.feeYearMonth
             var power = data.powerSum
-            $.detail += yearmonth + " 电费：" + total + "\n用电量：" + power
-            $.notify("国网电费-湖南", addr, time + "\n当前余额：" + balance + "元");
+            $.detail = yearmonth + "月电费：" + total + "元\n当月用电量：" + power + "度"
         } else {
             $.error(JSON.stringify(response));
             throw new ERR.ParseError("请检查日志，稍后再试");
