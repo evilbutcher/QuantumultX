@@ -20,7 +20,7 @@
 
 
 【使用说明】
-登录微信公众号查询国网电费，手动获取Cookie即可使用。
+登录微信公众号查询电量、电费，获取Cookie即可使用。
 
 【Surge】
 -----------------
@@ -56,7 +56,7 @@ $.feecookie = $.read("evil_billhnfeeCookie");
 $.feeurl = $.read("evil_billhnfeeUrl");
 $.detailcookie = $.read("evil_billhndetailCookie");
 $.detailurl = $.read("evil_billhndetailUrl");
-$.$.detailweek = ""
+$.detailweek = ""
 $.detailyesterday = ""
 $.detail = ""
 
