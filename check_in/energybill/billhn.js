@@ -212,7 +212,7 @@ function getCookie() {
     if (
         $request &&
         $request.method != "OPTIONS" &&
-        $request.url.match(/dfcx\_ajaxGetDfcxList/)
+        $request.url.match(/ajaxGetDfcxList/)
     ) {
         const cookie = $request.headers["Cookie"];
         $.log(cookie);
@@ -225,7 +225,7 @@ function getCookie() {
     if (
         $request &&
         $request.method != "OPTIONS" &&
-        $request.url.match(/dfcx\_ajaxGetcxssdl/)
+        $request.url.match(/ajaxGetcxssdl/)
     ) {
         const cookie = $request.headers["Cookie"];
         $.log(cookie);
