@@ -68,7 +68,7 @@ $.detail = ""
     if ($.feecookie != undefined && $.feeurl != undefined && $.detailcookie != undefined && $.detailurl != undefined && $.feecookie != "" && $.feeurl != "" && $.detailcookie != "" && $.detailurl != "") {
         await checkfee();
         await checkdetail();
-        $.notify("国网电费-湖南", $.detailyesterday, $.detailweek + $.detail);
+        $.notify("国网电费-湖南⚡️", $.detailyesterday, $.detailweek + $.detail);
     } else {
         $.notify("国网电费-湖南", "", "❌ 请先获取Cookie");
     }
@@ -146,9 +146,9 @@ function checkfee() {
         if (statusCode == 200) {
             var data = JSON.parse(response.body).powerBillList[0]
             var total = data.totalMoney
-            var yearmonth = data.feeYearMonth
+            //var yearmonth = data.feeYearMonth
             var power = data.powerSum
-            $.detail = yearmonth + "月电费：" + total + "元\n当月用电量：" + power + "度"
+            $.detail = "当月用电量：" + power + "度\n上月电费：" + total + "元"
         } else {
             $.error(JSON.stringify(response));
             throw new ERR.ParseError("请检查日志，稍后再试");
