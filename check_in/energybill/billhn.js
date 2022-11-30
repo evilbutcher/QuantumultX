@@ -61,10 +61,12 @@ $.detailcookie = $.read("evil_billhndetailCookie");
 $.detailurl = $.read("evil_billhndetailUrl");
 $.balancecookie = $.read("evil_billhnbalanceCookie");
 $.balanceurl = $.read("evil_billhnbalanceUrl");
-$.detailweek = ""
+$.detailmonth = ""
 $.detailyesterday = ""
 $.detail = ""
 $.balance = ""
+var date = new Date();
+var month = date.getMonth() + 1
 
 !(async () => {
     if (typeof $request != "undefined") {
@@ -117,12 +119,14 @@ function checkdetail() {
         if (statusCode == 200) {
             var data = JSON.parse(response.body)
             var yesterday = data[0].spower
-            var week = 0
-            for (i = 0; i < 7; i++) {
-                week = week + parseInt(data[i].spower)
+            var thismonth = 0
+            for (i = 0; i < data.length; i++) {
+                if (parseInt(data[i].date.slice(1, 2)) == month) {
+                    thismonth = thismonth + parseInt(data[i].spower)
+                }
             }
             $.detailyesterday = "昨日用电：" + yesterday + "度\n"
-            //$.detailweek = "最近7日用电量：" + week + "度\n"
+            $.detailmonth = "本月用电：" + week + "度\n"
         } else {
             $.error(JSON.stringify(response));
             throw new ERR.ParseError("请检查日志，稍后再试");
@@ -183,7 +187,7 @@ function checkfee() {
             var total = data.totalMoney
             //var yearmonth = data.feeYearMonth
             var power = data.powerSum
-            $.detail = "当月用电：" + power + "度\n上月电费：" + total + "元\n"
+            $.detail = "上月用电：" + power + "度/" + total + "元\n"
         } else {
             $.error(JSON.stringify(response));
             throw new ERR.ParseError("请检查日志，稍后再试");
