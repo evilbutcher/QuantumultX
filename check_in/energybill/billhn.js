@@ -74,10 +74,11 @@ var month = parseInt(date.getMonth()) + 1
         return;
     }
     if ($.feecookie != undefined && $.feeurl != undefined && $.detailcookie != undefined && $.detailurl != undefined && $.feecookie != "" && $.feeurl != "" && $.detailcookie != "" && $.detailurl != "") {
-        await checkfee();
-        await checkdetail();
-        await checkbalance();
-        $.notify("国网电费-湖南⚡️", "", $.detailyesterday + $.detailmonth + $.balance);
+        //await checkfee();
+        //await checkdetail();
+        //await checkbalance();
+        //$.notify("国网电费-湖南⚡️", "", $.detailyesterday + $.detailmonth + $.balance);
+        $.notify("国网电费-湖南⚡️", "", "Cookie失效太快，已停更");
     } else {
         $.notify("国网电费-湖南", "", "❌ 请先获取Cookie");
     }
