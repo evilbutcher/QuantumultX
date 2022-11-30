@@ -120,7 +120,7 @@ function checkdetail() {
             var data = JSON.parse(response.body)
             var thismonth = 0
             for (i = 0; i < data.length; i++) {
-                var mon = data[i].date.slice(1, 2)
+                var mon = data[i].date.slice(0, 2)
                 console.log(mon)
                 if (parseInt(mon) == month && data[i].spower != "-") {
                     thismonth = thismonth + parseInt(data[i].spower)
