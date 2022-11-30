@@ -125,7 +125,11 @@ function checkdetail() {
                     thismonth = thismonth + parseInt(data[i].spower)
                 }
             }
-            $.detailyesterday = "昨日用电：" + yesterday + "度\n"
+            if (yesterday != "-") {
+                $.detailyesterday = "昨日用电：" + yesterday + "度\n"
+            } else {
+                $.detailyesterday = "昨日用电：0度\n"
+            }
             $.detailmonth = "本月用电：" + thismonth + "度\n"
         } else {
             $.error(JSON.stringify(response));
