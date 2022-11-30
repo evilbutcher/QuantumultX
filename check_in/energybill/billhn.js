@@ -77,7 +77,7 @@ var month = parseInt(date.getMonth()) + 1
         await checkfee();
         await checkdetail();
         await checkbalance();
-        $.notify("国网电费-湖南⚡️", "", $.detailyesterday + $.detail + $.balance);
+        $.notify("国网电费-湖南⚡️", "", $.detailyesterday + $.detailmonth + $.balance);
     } else {
         $.notify("国网电费-湖南", "", "❌ 请先获取Cookie");
     }
@@ -121,7 +121,6 @@ function checkdetail() {
             var thismonth = 0
             for (i = 0; i < data.length; i++) {
                 var mon = data[i].date.slice(0, 2)
-                console.log(mon)
                 if (parseInt(mon) == month && data[i].spower != "-") {
                     thismonth = thismonth + parseInt(data[i].spower)
                 }
