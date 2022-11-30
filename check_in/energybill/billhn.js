@@ -66,7 +66,7 @@ $.detailyesterday = ""
 $.detail = ""
 $.balance = ""
 var date = new Date();
-var month = date.getMonth() + 1
+var month = parseInt(date.getMonth()) + 1
 
 !(async () => {
     if (typeof $request != "undefined") {
@@ -118,19 +118,21 @@ function checkdetail() {
         var statusCode = response.statusCode
         if (statusCode == 200) {
             var data = JSON.parse(response.body)
-            var yesterday = data[0].spower
             var thismonth = 0
             for (i = 0; i < data.length; i++) {
-                if (parseInt(data[i].date.slice(1, 2)) == month && data[i].spower != "-") {
+                var mon = data[i].date.slice(1, 2)
+                console.log(mon)
+                if (parseInt(mon) == month && data[i].spower != "-") {
                     thismonth = thismonth + parseInt(data[i].spower)
                 }
             }
+            $.detailmonth = "本月用电：" + thismonth + "度\n"
+            var yesterday = data[0].spower
             if (yesterday != "-") {
                 $.detailyesterday = "昨日用电：" + yesterday + "度\n"
             } else {
                 $.detailyesterday = "昨日用电：0度\n"
             }
-            $.detailmonth = "本月用电：" + thismonth + "度\n"
         } else {
             $.error(JSON.stringify(response));
             throw new ERR.ParseError("请检查日志，稍后再试");
