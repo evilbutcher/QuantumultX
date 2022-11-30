@@ -121,12 +121,12 @@ function checkdetail() {
             var yesterday = data[0].spower
             var thismonth = 0
             for (i = 0; i < data.length; i++) {
-                if (parseInt(data[i].date.slice(1, 2)) == month) {
+                if (parseInt(data[i].date.slice(1, 2)) == month && data[i].spower != "-") {
                     thismonth = thismonth + parseInt(data[i].spower)
                 }
             }
             $.detailyesterday = "昨日用电：" + yesterday + "度\n"
-            $.detailmonth = "本月用电：" + week + "度\n"
+            $.detailmonth = "本月用电：" + thismonth + "度\n"
         } else {
             $.error(JSON.stringify(response));
             throw new ERR.ParseError("请检查日志，稍后再试");
