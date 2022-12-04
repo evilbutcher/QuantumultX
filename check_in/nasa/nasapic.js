@@ -98,7 +98,7 @@ function getpic() {
 async function translateexp() {
   var wtext = encodeURI($.data.explanation) || "无";
   const tranexp = {
-    url: `http://translate.google.cn/translate_a/single?client=gtx&dt=t&dj=1&ie=UTF-8&sl=auto&tl=zh_cn&q=${wtext}`,
+    url: `http://translate.google.com/translate_a/single?client=gtx&dt=t&dj=1&ie=UTF-8&sl=auto&tl=zh_cn&q=${wtext}`,
   };
   return $.http.get(tranexp).then((response) => {
     $.transexp = JSON.parse(response.body).sentences;
@@ -109,7 +109,7 @@ async function translateexp() {
 async function translatetitle() {
   var wtitle = encodeURI($.data.title) || "无";
   const trantitle = {
-    url: `http://translate.google.cn/translate_a/single?client=gtx&dt=t&dj=1&ie=UTF-8&sl=auto&tl=zh_cn&q=${wtitle}`,
+    url: `http://translate.google.com/translate_a/single?client=gtx&dt=t&dj=1&ie=UTF-8&sl=auto&tl=zh_cn&q=${wtitle}`,
   };
   return $.http.get(trantitle).then((response) => {
     $.transtitle = JSON.parse(response.body).sentences;
