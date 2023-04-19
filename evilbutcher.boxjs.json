@@ -1082,6 +1082,28 @@
         "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/bill.png"
       ],
       "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/energybill/billhn.js"
+    },
+    {
+      "id": "gjb",
+      "name": "gjb",
+      "descs_html": [
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in\">脚本地址</a>】"
+      ],
+      "keys": [
+        "@gjb.evil_gjbCookie",
+        "@gjb.evil_gjbDocid",
+        "@gjb.evil_gjbDepid",
+        "@gjb.evil_gjbDepname",
+        "@gjb.evil_gjbtargetDoc",
+        "@gjb.evil_gjbdate"
+      ],
+      "author": "@evilbutcher",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in",
+      "icons": [
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/gjb_tran.png",
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/gjb.png"
+      ],
+      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in"
     }
   ]
 }
