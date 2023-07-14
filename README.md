@@ -6,8 +6,7 @@
 
 绝大多数代码都用到了@chavyleung 的 Env.js 和@Peng-YM 的 OpenAPI.js，感谢！
 
-如果能请杯奶茶，就很感谢啦！  
-<img src="https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/photo.jpeg" height="40%" width="40%">
+### 如果实际使用下载速度太慢推荐"加速器"：[Matrix](https://amatrixap.com/auth/register?code=UFMM) 、[GLaDOS]（https://glados.space/landing/3JRG4-KSGZJ-8QPXF-8PPOO）（3JRG4-KSGZJ-8QPXF-8PPOO）
 
 ## 脚本合集
 
