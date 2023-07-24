@@ -103,29 +103,33 @@ function signin() {
     $.post(signinRequest, (error, response, data) => {
       var body = response.body;
       var obj = JSON.parse(body);
-      if (obj.message != "oops, token error") {
-        if (obj.message != "Please Try Tomorrow") {
-          var date = new Date();
-          var y = date.getFullYear();
-          var m = date.getMonth() + 1;
-          if (m < 10) m = "0" + m;
-          var d = date.getDate();
-          if (d < 10) d = "0" + d;
-          var time = y + "-" + m + "-" + d;
-          var business = obj.list[0].business;
-          var sysdate = business.slice(-10);
-          if (JSON.stringify(time) == JSON.stringify(sysdate)) {
-            change = obj.list[0].change;
-            changeday = parseInt(change);
-            message += `今日签到获得${changeday}天`;
+      if (obj.code != -2) {
+        if (obj.message != "oops, token error") {
+          if (obj.message != "Please Try Tomorrow") {
+            var date = new Date();
+            var y = date.getFullYear();
+            var m = date.getMonth() + 1;
+            if (m < 10) m = "0" + m;
+            var d = date.getDate();
+            if (d < 10) d = "0" + d;
+            var time = y + "-" + m + "-" + d;
+            var business = obj.list[0].business;
+            var sysdate = business.slice(-10);
+            if (JSON.stringify(time) == JSON.stringify(sysdate)) {
+              change = obj.list[0].change;
+              changeday = parseInt(change);
+              message += `今日签到获得${changeday}天`;
+            } else {
+              message += `今日签到获得0天`;
+            }
           } else {
-            message += `今日签到获得0天`;
+            message += "今日已签到";
           }
         } else {
-          message += "今日已签到";
+          message += obj.message;
         }
       } else {
-        message += obj.message;
+        message += obj.message
       }
       resolve();
     });
