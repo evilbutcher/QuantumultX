@@ -820,7 +820,7 @@
       "id": "funboat",
       "name": "Funboat",
       "descs_html": [
-        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/funboat/funboat.js\">脚本地址</a>】",
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/funko/funboat.js\">脚本地址</a>】",
         "微信小程序搜索 Funboat，按照脚本提示获取Cookie。",
         "⚠️其他基于有赞的小程序也可能触发获取Cookie，请获取完后及时禁用获取Cookie重写/脚本。"
       ],
@@ -831,12 +831,32 @@
         "evil_funkostatuscookie"
       ],
       "author": "@evilbutcher",
-      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/funboat",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/funko",
       "icons": [
         "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/funko_tran.png",
         "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/funko.png"
       ],
-      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/funboat/funboat.js"
+      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/funko/funboat.js"
+    },
+    {
+      "id": "MINDstyle",
+      "name": "MINDstyle",
+      "descs_html": [
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/funko/mindstyle.js\">脚本地址</a>】",
+        "微信小程序搜索 MINDstyle，按照脚本提示获取Cookie。",
+        "⚠️其他基于有赞的小程序也可能触发获取Cookie，请获取完后及时禁用获取Cookie重写/脚本。"
+      ],
+      "keys": [
+        "evil_mindstyleurl",
+        "evil_mindstylecookie"
+      ],
+      "author": "@evilbutcher",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/funko",
+      "icons": [
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/funko_tran.png",
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/funko.png"
+      ],
+      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/funko/mindstyle.js"
     },
     {
       "id": "timepop",
