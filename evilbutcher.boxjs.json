@@ -853,8 +853,8 @@
       "author": "@evilbutcher",
       "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in/funko",
       "icons": [
-        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/funko_tran.png",
-        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/funko.png"
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/mindstyle_tran.png",
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/mindstyle.png"
       ],
       "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/funko/mindstyle.js"
     },
