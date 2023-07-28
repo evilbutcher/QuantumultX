@@ -45,7 +45,7 @@ http-request ^https:\/\/h5\.youzan\.com\/wscump\/checkin\/checkinV2\.json\?check
 hostname = h5.youzan.com
 
 */
-const $ = new Env("MINDstyle");
+const $ = new Env("mindstyle");
 const signurl = "evil_mindstyleurl";
 const signcookie = "evil_mindstylecookie";
 
@@ -57,9 +57,12 @@ var detail;
 !(async () => {
   if (typeof $request != "undefined") {
     getCookie();
-    return;
   }
-  await checkin();
+  if (siurl != "" & siurl != undefined & sicookie != "" & sicookie != undefined) {
+    await checkin();
+  } else {
+    $.msg("MINDstyle", "", "❌请先获取Cookie")
+  }
 })()
   .catch((e) => {
     $.log("", `❌失败! 原因: ${e}!`, "");
