@@ -1124,6 +1124,23 @@
         "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/gjb.png"
       ],
       "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in"
+    },
+    {
+      "id": "hjjc",
+      "name": "环境辐射检测",
+      "descs_html": [
+        "点此直达【<a href=\"https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in\">脚本地址</a>】"
+      ],
+      "keys": [
+        "evil_hjjcloc"
+      ],
+      "author": "@evilbutcher",
+      "repo": "https://github.com/evilbutcher/QuantumultX/tree/master/check_in",
+      "icons": [
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/10th.png",
+        "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/10th.png"
+      ],
+      "script": "https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/hjjc/hjjc.js"
     }
   ]
 }
