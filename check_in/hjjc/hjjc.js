@@ -29,13 +29,13 @@ BoxJs填写地区即可食用。
 【Surge】
 ————————————————
 [Script]
-mindstyle签到 = type=cron,cronexp=5 0 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/hjjc/hjjc.js
+环境辐射检测 = type=cron,cronexp=5 0 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/hjjc/hjjc.js
 
 
 【Loon】
 ————————————————
 [Script]
-cron "5 0 * * *" tag=mindstyle签到, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/hjjc/hjjc.js
+cron "5 0 * * *" tag=环境辐射检测, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/hjjc/hjjc.js
 
 */
 
