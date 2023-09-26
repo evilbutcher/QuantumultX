@@ -118,9 +118,7 @@ function signin() {
             if (JSON.stringify(time) == JSON.stringify(sysdate)) {
               change = obj.list[0].change;
               changeday = parseInt(change);
-              message += `今日签到获得${changeday}天`;
-            } else {
-              message += `今日签到获得0天`;
+              message += `今日签到获得${changeday}点数`;
             }
           } else {
             message += "今日已签到";
@@ -147,10 +145,11 @@ function status() {
       var obj = JSON.parse(body);
       if (obj.code == 0) {
         account = obj.data.email;
-        expday = obj.data.days;
+        //expday = obj.data.days;
         remain = obj.data.leftDays;
         remainday = parseInt(remain);
-        message += `\n已用${expday}天,剩余${remainday}天`;
+        //message += `\n已用${expday}天,剩余${remainday}天`;
+        message += `\n剩余${remainday}天`;
         $.msg("GLaDOS", `账户：${account}`, message);
       } else {
         $.log(response);
