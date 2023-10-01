@@ -1,9 +1,9 @@
 /*
 【华住会】@evilbutcher
 
-【仓库地址】https://github.com/evilbutcher/QuantumultX/tree/master（欢迎star🌟）
+【仓库地址】https://github.com/evilbutcher/QuantumultX/tree/main（欢迎star🌟）
 
-【BoxJs】https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/evilbutcher.boxjs.json
+【BoxJs】https://raw.githubusercontent.com/evilbutcher/QuantumultX/main/evilbutcher.boxjs.json
 
 【致谢】
 感谢Peng-YM的OpenAPI.js！
@@ -25,29 +25,29 @@
 【Surge】
 -----------------
 [Script]
-华住会获取签到Cookie = type=http-request, pattern = https:\/\/hweb-mbf\.huazhu\.com\/api\/signIn, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/hzh/hzh.js, requires-body=false
-华住会 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/hzh/hzh.js
+华住会获取签到Cookie = type=http-request, pattern = https:\/\/hweb-mbf\.huazhu\.com\/api\/signIn, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/main/check_in/hzh/hzh.js, requires-body=false
+华住会 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/main/check_in/hzh/hzh.js
 
 【Loon】
 -----------------
 [Script]
-http-request https:\/\/hweb-mbf\.huazhu\.com\/api\/signIn tag=华住会获取签到Cookie, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/hzh/hzh.js, requires-body=false
-cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/hzh/hzh.js, tag=华住会
+http-request https:\/\/hweb-mbf\.huazhu\.com\/api\/signIn tag=华住会获取签到Cookie, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/main/check_in/hzh/hzh.js, requires-body=false
+cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/main/check_in/hzh/hzh.js, tag=华住会
 
 【Quantumult X】
 -----------------
 [rewrite_local]
-https:\/\/hweb-mbf\.huazhu\.com\/api\/signIn url script-request-header https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/hzh/hzh.js
+https:\/\/hweb-mbf\.huazhu\.com\/api\/signIn url script-request-header https://raw.githubusercontent.com/evilbutcher/QuantumultX/main/check_in/hzh/hzh.js
 
 [task_local]
-5 0 * * * https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/check_in/hzh/hzh.js, tag=华住会
+5 0 * * * https://raw.githubusercontent.com/evilbutcher/QuantumultX/main/check_in/hzh/hzh.js, tag=华住会
 
 【All App MitM】
 hostname = hweb-mbf.huazhu.com
 
 【Icon】
-透明：https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/hzh_tran.png
-彩色：https://raw.githubusercontent.com/evilbutcher/QuantumultX/master/picture/hzh.png
+透明：https://raw.githubusercontent.com/evilbutcher/QuantumultX/main/picture/hzh_tran.png
+彩色：https://raw.githubusercontent.com/evilbutcher/QuantumultX/main/picture/hzh.png
 */
 
 const $ = new API("hzh", true);
@@ -203,10 +203,10 @@ function getCookie() {
     $request.method != "OPTIONS" &&
     $request.url.match(/api\/signIn/)
   ) {
-    const cookie = $request.headers["Cookie"];
+    const cookie = $request.headers["Cookie"] || $request.headers["cookie"];
     $.log(cookie);
     $.write(cookie, "evil_hzhCookie");
-    const usertoken = $request.headers["User-Token"];
+    const usertoken = $request.headers["User-Token"] || $request.headers["user-token"];
     $.log(usertoken);
     $.write(usertoken, "evil_hzhUserToken");
     $.notify("华住会", "", "获取签到Cookie成功🎉");
