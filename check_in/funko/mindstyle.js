@@ -57,6 +57,7 @@ var detail;
 !(async () => {
   if (typeof $request != "undefined") {
     getCookie();
+    return
   }
   if (siurl != "" & siurl != undefined & sicookie != "" & sicookie != undefined) {
     await checkin();
