@@ -97,6 +97,8 @@ function checkin() {
         } else {
           detail = obj.msg;
           console.log(detail);
+          $.setdata("",signurl)
+          $.setdata("",signcookie)
         }
         $.msg("MINDstyle", "", detail, {
           "media-url":
