@@ -1,6 +1,6 @@
 [![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=evilbutcher)](https://github.com/anuraghazra/github-readme-stats)
 
-#### Recommended "Accelerator" if the actual download speed is too slow: [Matrix](https://amatrixap.com/auth/register?code=UFMM) 、[GLaDOS](https://glados.space/landing/3JRG4-KSGZJ-8QPXF-8PPOO)（3JRG4-KSGZJ-8QPXF-8PPOO）
+#### Recommended "Accelerator" if the actual download speed is too slow: [GLaDOS](https://glados.space/landing/3JRG4-KSGZJ-8QPXF-8PPOO)（3JRG4-KSGZJ-8QPXF-8PPOO）
 
 # Scripts and Rules Collation
 
