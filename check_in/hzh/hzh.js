@@ -25,25 +25,25 @@
 【Surge】
 -----------------
 [Script]
-华住会获取签到Cookie = type=http-request, pattern = https:\/\/hweb-mbf\.huazhu\.com\/api\/signIn, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/main/check_in/hzh/hzh.js, requires-body=false
+华住会获取签到Cookie = type=http-request, pattern = https:\/\/appgw\.huazhu\.com\/game\/sign_header, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/main/check_in/hzh/hzh.js, requires-body=false
 华住会 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/main/check_in/hzh/hzh.js
 
 【Loon】
 -----------------
 [Script]
-http-request https:\/\/hweb-mbf\.huazhu\.com\/api\/signIn tag=华住会获取签到Cookie, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/main/check_in/hzh/hzh.js, requires-body=false
+http-request https:\/\/appgw\.huazhu\.com\/game\/sign_header tag=华住会获取签到Cookie, script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/main/check_in/hzh/hzh.js, requires-body=false
 cron "5 0 * * *" script-path=https://raw.githubusercontent.com/evilbutcher/QuantumultX/main/check_in/hzh/hzh.js, tag=华住会
 
 【Quantumult X】
 -----------------
 [rewrite_local]
-https:\/\/hweb-mbf\.huazhu\.com\/api\/signIn url script-request-header https://raw.githubusercontent.com/evilbutcher/QuantumultX/main/check_in/hzh/hzh.js
+https:\/\/appgw\.huazhu\.com\/game\/sign_header url script-request-header https://raw.githubusercontent.com/evilbutcher/QuantumultX/main/check_in/hzh/hzh.js
 
 [task_local]
 5 0 * * * https://raw.githubusercontent.com/evilbutcher/QuantumultX/main/check_in/hzh/hzh.js, tag=华住会
 
 【All App MitM】
-hostname = hweb-mbf.huazhu.com
+hostname = appgw.huazhu.com
 
 【Icon】
 透明：https://raw.githubusercontent.com/evilbutcher/QuantumultX/main/picture/hzh_tran.png
@@ -62,7 +62,6 @@ $.usertoken = $.read("evil_hzhUserToken");
   }
   if ($.cookie != undefined && $.usertoken != undefined) {
     await checkin();
-    await checkinfo();
     /*for (var i = 1; i < 4; i++) {
       await checkprize(i);
     }
@@ -92,33 +91,24 @@ $.usertoken = $.read("evil_hzhUserToken");
   .finally(() => $.done());
 
 function checkin() {
-  var date = new Date();
-  var strDate = date.getDate();
-  if (strDate >= 0 && strDate <= 9) {
-    strDate = "0" + strDate;
-  }
-  var body = `state=1&day=${strDate}`;
-  const url = `https://hweb-mbf.huazhu.com/api/signIn`;
+  const url = `https://appgw.huazhu.com/game/sign_in?date=${parseInt(Date.now() / 1000)}`;
   const headers = {
-    Connection: `keep-alive`,
-    "Accept-Encoding": `gzip, deflate, br`,
-    "Client-Platform": `APP-IOS`,
-    "Content-Type": `application/x-www-form-urlencoded`,
-    Origin: `https://campaign.huazhu.com`,
-    "User-Agent": `HUAZHU/ios/iPhone12,1/14.6/8.0.70/HUAZHU/ios/iPhone12,1/14.6/8.0.70/HUAZHU/ios/iPhone12,1/14.6/8.0.70/HUAZHU/ios/iPhone12,1/14.6/8.0.70/Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148`,
-    "User-Token": $.usertoken,
+    Connection: "keep-alive",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Client-Platform": "APP-IOS",
+    Origin: "https://cdn.huazhu.com",
+    "User-Agent": "HUAZHU/ios/iPhone/18.0/9.24.0/RNWEBVIEW",
     Cookie: $.cookie,
-    Host: `hweb-mbf.huazhu.com`,
-    Referer: `https://campaign.huazhu.com/points-shop/`,
-    "Accept-Language": `zh-cn`,
-    Accept: `application/json, text/plain, */*`,
+    Host: "appgw.huazhu.com",
+    Referer: "https://cdn.huazhu.com/",
+    "Accept-Language": "zh-CN,zh-Hans;q=0.9",
+    Accept: "application/json, text/plain, */*",
   };
   const myRequest = {
     url: url,
-    headers: headers,
-    body: body,
+    headers: headers
   };
-  return $.http.post(myRequest).then((response) => {
+  return $.http.get(myRequest).then((response) => {
     if (response.statusCode == 200) {
       if (JSON.parse(response.body).message == "fail") {
         throw new ERR.EventError("服务器返回数据错误，请重新获取Cookie");
@@ -133,48 +123,18 @@ function checkin() {
   });
 }
 
-function checkinfo() {
-  const url2 = `https://hweb-mbf.huazhu.com/api/singInIndex`;
-  const headers2 = {
-    Origin: `https://campaign.huazhu.com`,
-    Cookie: $.cookie,
-    "Client-Platform": `APP-IOS`,
-    Connection: `keep-alive`,
-    Accept: `application/json, text/plain, */*`,
-    "User-Token": $.usertoken,
-    Host: `hweb-mbf.huazhu.com`,
-    "User-Agent": `HUAZHU/ios/iPhone12,1/14.6/8.0.70/HUAZHU/ios/iPhone12,1/14.6/8.0.70/HUAZHU/ios/iPhone12,1/14.6/8.0.70/HUAZHU/ios/iPhone12,1/14.6/8.0.70/Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148`,
-    Referer: `https://campaign.huazhu.com/points-shop/`,
-    "Accept-Language": `zh-cn`,
-    "Accept-Encoding": `gzip, deflate, br`,
-  };
-
-  const myRequest2 = {
-    url: url2,
-    headers: headers2,
-  };
-  return $.http.get(myRequest2).then((response) => {
-    if (response.statusCode == 200) {
-      if (JSON.parse(response.body).message == "fail") {
-        throw new ERR.EventError("服务器返回数据错误，请重新获取Cookie");
-      } else {
-        $.datainfo = JSON.parse(response.body).content;
-        $.log($.datainfo);
-      }
-    } else {
-      $.error(JSON.stringify(response));
-      throw new ERR.ParseError("查询签到错误，请检查日志，稍后再试");
-    }
-  });
-}
-
 function showmsg() {
-  count = $.datainfo.signInCount;
-  if ($.data.isSign != null && $.data.isSign == true) {
-    $.notify("华住会", "今日已签到🎉", `累计签到${count}天！`);
-  } else if ($.data.isSign != null && $.data.isSign == false) {
-    point = $.data.point;
-    $.notify("华住会", "签到成功🎉", `获得${point}积分，累计签到${count}天！`);
+  if ($.data.signResult == true) {
+    const respContent = $.data;
+    const awardMap = respContent.awardMap;
+    let awardNames = '';
+    if (awardMap && awardMap.award && Array.isArray(awardMap.award)) {
+        awardNames = awardMap.award.map(item => item.awardName).join('、');
+    }
+    const message = `获得 ${respContent.point} 积分${awardNames ? `、${awardNames}` : ''}！`;
+    $.notify("华住会", "签到成功🎉", message);
+  } else {
+    $.notify("华住会", "今日已签到🎉", ``);
   }
 }
 
@@ -201,14 +161,11 @@ function getCookie() {
   if (
     $request &&
     $request.method != "OPTIONS" &&
-    $request.url.match(/api\/signIn/)
+    $request.url.match(/game\/sign_header/)
   ) {
     const cookie = $request.headers["Cookie"] || $request.headers["cookie"];
     $.log(cookie);
     $.write(cookie, "evil_hzhCookie");
-    const usertoken = $request.headers["User-Token"] || $request.headers["user-token"];
-    $.log(usertoken);
-    $.write(usertoken, "evil_hzhUserToken");
     $.notify("华住会", "", "获取签到Cookie成功🎉");
   }
 }
