@@ -53,14 +53,13 @@ hostname = appgw.huazhu.com
 const $ = new API("hzh", true);
 const ERR = MYERR();
 $.cookie = $.read("evil_hzhCookie");
-$.usertoken = $.read("evil_hzhUserToken");
 
 !(async () => {
   if (typeof $request != "undefined") {
     getCookie();
     return;
   }
-  if ($.cookie != undefined && $.usertoken != undefined) {
+  if ($.cookie != undefined) {
     await checkin();
     /*for (var i = 1; i < 4; i++) {
       await checkprize(i);
